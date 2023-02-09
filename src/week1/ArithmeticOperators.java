@@ -29,6 +29,11 @@ public class ArithmeticOperators {
         System.out.println(num5);
         int num6 = randomNumber++;
         System.out.println(num6); // It seems there is no difference between the ++ before the variable and after.
+        int anotherRandomNumber = 46;
+        int num7 = --anotherRandomNumber;
+        System.out.println(num7);
+        int num8 = anotherRandomNumber--;
+        System.out.println(num8); //Now let's try out the decrement.
 
 
     }
