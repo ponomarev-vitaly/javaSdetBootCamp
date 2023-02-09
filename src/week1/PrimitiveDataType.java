@@ -1,20 +1,23 @@
 package week1;
 
 public class PrimitiveDataType {
-    boolean isCold = true;
-    boolean isHeavy = false;
+    public static void main(String[] args) {
 
-    char initial = 'C';
+        boolean isCold = true;
+        boolean isHeavy = false;
 
-    byte age = 22;
+        char initial = 'C';
 
-    short salary = 1000;
+        byte age = 22;
 
-    System.out.println(isCold);
-    System.out.println(isHeavy);
-    System.out.println(initial);
-    System.out.println(age);
-    System.out.println(salary);
+        short salary = 1000;
 
+        System.out.println(isCold);
+        System.out.println(isHeavy);
+        System.out.println(initial);
+        System.out.println(age);
+        System.out.println(salary);
     }
+
 }
+
