@@ -12,8 +12,10 @@ public class NonPrimitiveDataType {
         System.out.println(txt);
         System.out.println(txt.toUpperCase());
         System.out.print(txt.toLowerCase());
-
-        System.out.println(txt.indexOf("s"));
+        System.out.println("This is the first s index : " + txt.indexOf("s"));
+        System.out.println("This is the second s index : " + txt.indexOf("s", txt.indexOf("s") + 1));
+        System.out.println(txt.indexOf("way"));
+        System.out.println(txt.indexOf("A"));
 
     }
 }
