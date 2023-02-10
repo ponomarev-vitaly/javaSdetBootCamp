@@ -5,7 +5,7 @@ package week1.homework;
 public class SingleComment {
 
 
-    class SingleComment
+    class SingleComment1
     {
         public static void main(String args[])
         {

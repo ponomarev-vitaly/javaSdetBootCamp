@@ -9,11 +9,11 @@ package week1.homework;
  *comment ends*/
 public class MyClass {
 
-package week1.homework; //do not write package name here
+// package week1.homework; //do not write package name here
 
-import java.io.*;
+// import java.io.*;
 
-    class MyClass {
+    class MyClass1 {
         public static void main (String[] args) {
 
             /** comment line 1
