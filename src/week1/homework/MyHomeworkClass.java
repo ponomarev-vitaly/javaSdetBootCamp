@@ -34,7 +34,7 @@ public class MyHomeworkClass {
     }
 
     public class Student {
-        private String name; // * The first and last name of this student.
+        private String name; // The first and last name of this student.
         public Student(String name) {
             this.name = name;
         }
