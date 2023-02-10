@@ -1,5 +1,5 @@
 package week1.homework;
-/** 6-) Create an new class and main method with any name and copy below codes and correct the wrong comments
+/** Create a new class and main method with any name and copy below codes and correct the wrong comments
 
         Java program to show multi line comments */
 public class SingleComment {
