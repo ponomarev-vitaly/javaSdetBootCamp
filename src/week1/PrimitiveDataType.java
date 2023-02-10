@@ -17,6 +17,12 @@ public class PrimitiveDataType {
         float height = 19.8f;
         double dHeight = 38.8;
 
+        /**
+         * Set a variable to final to prevent it from being overridden/modified:
+         *
+         */
+        final int number = 99;
+        float pi = 3.14f;
 
         System.out.println(weight);
         System.out.println(year);
