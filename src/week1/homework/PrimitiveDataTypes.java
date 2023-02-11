@@ -58,15 +58,15 @@ public class PrimitiveDataTypes {
         System.out.println(anyRange);
         byte randomRange = 1;
         System.out.println(randomRange);
-        short maxShortRange = 32767; //This block of code is for the short variables.
+        short maxShortRange = 32767; // This block of code is for the short variables.
         System.out.println(maxShortRange);
-        short minshortRange = -32768;
-        System.out.println(minshortRange);
-        short anyshortRange = 20000;
-        System.out.println(anyshortRange);
+        short minShortRange = -32768;
+        System.out.println(minShortRange);
+        short anyShortRange = 20000;
+        System.out.println(anyShortRange);
         short randomShortRange = -12758;
         System.out.println(randomShortRange);
-        int maxIntRange = 2147483647; //This piece of code is for the integer variables.
+        int maxIntRange = 2147483647; // This piece of code is for the integer variables.
         System.out.println(maxIntRange);
         int minIntRange = -2147483648;
         System.out.println(minIntRange);
