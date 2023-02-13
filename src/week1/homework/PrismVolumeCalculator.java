@@ -9,11 +9,11 @@ public class PrismVolumeCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter the width of the rectangular prism: ");
-        int prismWidth = scan.nextByte();
+        int prismWidth = scan.nextInt();
         System.out.println("Please enter the length of the rectangular prism: ");
-        int prismLength = scan.nextByte();
+        int prismLength = scan.nextInt();
         System.out.println("Please enter the height of the rectangular prism: ");
-        int prismHeight = scan.nextByte();
+        int prismHeight = scan.nextInt();
         int prismVolume = prismWidth * prismLength * prismHeight;
         System.out.println("The volume of the rectangular prism is: " + prismVolume);
 
