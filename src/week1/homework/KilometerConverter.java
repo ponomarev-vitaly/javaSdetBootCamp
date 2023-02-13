@@ -9,6 +9,10 @@ Hint 2: To get double, use nextDouble()
 public class KilometerConverter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the number of miles you want to convert: ");
+        double numberOfMiles = scan.nextDouble();
+        double numberOfKilometeres = 1.6 * numberOfMiles;
+        System.out.println("The number of the kilometeres is: " + numberOfKilometeres);
 
     }
 }
