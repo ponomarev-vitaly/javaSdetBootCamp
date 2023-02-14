@@ -34,9 +34,9 @@ public class IncrementAndDecrement {
 
         int numF = 15;
         numF = numF / 5;
-        System.out.println(numF);
+        System.out.println(numF); // --> 3
         numF /= 3;
-        System.out.println(numF);
+        System.out.println(numF); // --> 1
 
     }
 }
