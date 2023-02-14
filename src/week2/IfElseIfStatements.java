@@ -1,8 +1,11 @@
 package week2;
+import java.util.Scanner;
 
 public class IfElseIfStatements {
     public static void main(String[] args) {
-        int percentage = 77;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the grade percentage: ");
+        int percentage = scan.nextInt();
         char grade;
         if(percentage >= 90){
             grade = 'A';
