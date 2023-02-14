@@ -38,5 +38,9 @@ public class IncrementAndDecrement {
         numF /= 3;
         System.out.println(numF); // --> 1
 
+        int numG = 9;
+        numG--;
+        System.out.println(numG); // --> 8
+
     }
 }
