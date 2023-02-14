@@ -10,6 +10,19 @@ public class IfElseStatement {
             System.out.println("The number is not positive.");
         }
 
+        String weather = "rain";
+        if(weather == "rain"){
+            System.out.println("I will go to the mall");
+
+        }else{
+            System.out.println("I will go to the picnic");
+        }
+        if(weather.isEmpty()){
+            System.out.println("I will contact with my parent");
+        }else{
+            System.out.println("I will make the plan accordingly...");
+        }
+
         System.out.println("This code line is always executed.");
     }
 }
