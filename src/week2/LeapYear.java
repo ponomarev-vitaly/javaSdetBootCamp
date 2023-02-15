@@ -22,5 +22,10 @@ public class LeapYear {
         result = (year % 4 == 0) ? "This is a leap year. " : "This is not a leap year. ";
 
         System.out.println(result);
+
+        int result1;
+        result1 = (year % 4 == 0) ? 4: -1;
+        if(result1 == 4) System.out.println("Leap year.");
+        else System.out.println("Not a leap year.");
     }
 }
