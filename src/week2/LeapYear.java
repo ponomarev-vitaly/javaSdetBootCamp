@@ -1,5 +1,6 @@
 package week2;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LeapYear {
@@ -12,9 +13,14 @@ public class LeapYear {
          */
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the current year: ");
+        int year = scan.nextInt();
+        if(year % 4 == 0) System.out.println("This is a Leap year");
+        else System.out.println("This is not a leap year.");
 
+        String result;
+        result = (year % 4 == 0) ? "This is a leap year. " : "This is not a leap year. ";
 
-
-
+        System.out.println(result);
     }
 }
