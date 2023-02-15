@@ -9,12 +9,13 @@ if it is more than 70, print result as "Passed".
  */
 public class ExamEvaluation {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter the mid term exam result between 0-100: ");
+        System.out.println("Please enter the mid term exam result between from 0 to 100: ");
         int midTermExam = scan.nextInt();
-        System.out.println("Please enter the final exam result: ");
+        System.out.println("Please enter the final exam result from 0 to 100: ");
         int finalExam = scan.nextInt();
+        int termScore = (int) ((midTermExam * 0.4) + (finalExam * 0.6));
+
 
 
 
