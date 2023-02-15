@@ -15,6 +15,7 @@ public class ExamEvaluation {
         System.out.println("Please enter the final exam result from 0 to 100: ");
         int finalExam = scan.nextInt();
         int termScore = (int) ((midTermExam * 0.4) + (finalExam * 0.6));
+        System.out.println("Your Term Score is " + termScore);
         if(termScore > 70){
             System.out.println("You passed!");
         }else{
