@@ -24,7 +24,7 @@ public class SalaryAssessment {
             System.out.println("Average start for work");
         }else if(salary >= 60){
             System.out.println("Below average start for work");
-        }else if(salary >= 0){
+        }else { // No need to check anymore. So, no need in if(salary >= 0).
             System.out.println("Not acceptable");
         }
     }
