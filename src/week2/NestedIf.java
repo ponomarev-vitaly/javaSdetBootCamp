@@ -1,5 +1,5 @@
 package week2;
-
+import java.util.Scanner;
 public class NestedIf {
     public static void main(String[] args) {
 
@@ -19,5 +19,21 @@ public class NestedIf {
             }
         }
 
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter your car brand: ");
+    String car = scan.nextLine();
+    System.out.println(car);
+    System.out.println("Please enter your age: ");
+    int myAge = scan.nextInt();
+
+
+    if(car == "Mercedes") {
+        if (myAge >= 18) {
+            System.out.println("You are eligible to drive my car");
+        } else System.out.println("Sorry, you can not drive my car");
+    }else System.out.println("Your car is not matching");
+
     }
 }
+
+
