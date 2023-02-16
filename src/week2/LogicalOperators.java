@@ -57,7 +57,21 @@ public class LogicalOperators {
             System.out.println("Apple: ");
         else
             System.out.println("Grape: ");
+        /*
+        3) ! -> "Not" operator
+        !(true) = false
+        !(false) = true
+         */
 
+        if(!(5>7) && 10>6)
+            System.out.println("Apple");
+        else
+            System.out.println("Grape");
+
+        if(5>7 || !(10>6))
+            System.out.println("Apple");
+        else
+            System.out.println("Grape");
 
     }
 
