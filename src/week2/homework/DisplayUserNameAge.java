@@ -13,6 +13,9 @@ public class DisplayUserNameAge {
         System.out.printf("So %s. How old are you? ", name);
         int age = scanner.nextInt();
 
+        // consumes the dangling newline character
+        scanner.nextLine();
+
         System.out.printf("Cool! %d is a good age to start programming. \nWhat language would you prefer? ", age);
         String language = scanner.nextLine();
 
