@@ -1,5 +1,5 @@
 package week2.homework;
-import java.util.Scanner;
+import java.util.Scanner; // Import JAVA library for the Scanner.
 /*
 2-) Write a java program to get below inputs from user
     Enter your Name
@@ -21,20 +21,29 @@ import java.util.Scanner;
     Thanks for your confirmation, we saved your details.
     If user enters 2 then go to the beginning and start asking the same questions again.
  */
-public class CheckingPersonalData {
+public class CheckingPersonalInformation {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter your Name: ");
-        String name = scan.nextLine();
+        Scanner scan = new Scanner(System.in); // Create a Scanner - object from the Scanner Class.
+        System.out.println("Please enter your Name: "); // Directions for the user to enter personal information.
+        String name = scan.nextLine(); // Get the data from the user with Scanner object.
         System.out.println("Please enter your Gender: ");
         String gender = scan.nextLine();
         System.out.println("Please enter your Age: ");
-        int age = scan.nextInt();
+        String age = scan.nextLine();
         System.out.println("Please enter your Phone Number: ");
         String phone = scan.nextLine();
         System.out.println("Enter your city: ");
         String city = scan.nextLine();
-        System.out.println("Please verify your personal data: \n" + "Name            :\n" + name + "Gender          :" + gender + "Age             :" + age + "Phone Number    :" + phone + "City            :" + city);
+        System.out.println("Please verify your personal data: \n" + "Name            : " + name + "\nGender          : " + gender +
+                "\nAge             : " + age + "\nPhone Number    : " + phone + "\nCity            : " + city);
+
+        System.out.println("Select an option from below: 1 or 2. \n1 - All given information is correct, \n2 - I need to re-enter the information.");
+
+        int option = scan.nextInt();
+        if (option == 1)
+            System.out.println("Thanks for your confirmation, we saved your details.");
+        else
+            System.out.println("Go to the beginning and start answering the same questions again!");
 
     }
 }
