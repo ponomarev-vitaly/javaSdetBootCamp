@@ -10,6 +10,14 @@ public class ExamChecker {
         Scanner scan = new Scanner(System.in);
         System.out.printf("Please enter your mark: ");
         int mark = scan.nextInt();
+        if (mark >0 && mark <100) {
+            if (mark >= 65)
+                System.out.printf("Congrats! You have passed your exam!");
+            else
+                System.out.printf("Revive your knowledge! Re-exam!");
+        }
+        else
+            System.out.println("You have entered wrong mark. Give it another try!");
 
     }
 }
