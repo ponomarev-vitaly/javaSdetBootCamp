@@ -2,7 +2,7 @@ package week2;
 
 public class SwitchDayOfTheWeek {
     public static void main(String[] args) {
-        int dayOfWeek = 3;
+        int dayOfWeek = 1;
         switch(dayOfWeek){
             case 1 :
                 System.out.println("Monday");
