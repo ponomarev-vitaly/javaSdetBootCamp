@@ -22,8 +22,24 @@ public class ForLoop1 {
             if(i % 2 == 0) System.out.print(i + "-"); // output 0 2 4 6 ... 50
 
         }
+        System.out.println();
+        // print the time from 0 until 24 and add the Morning (0-12), noon (12), afternoon (12-17), night (5-24)
+        for(int time = 0; time <= 24; time++){
+            if(time < 12){
+                System.out.print(time + " Morning. ");
+            }else if(time == 12){
+                System.out.println();
+                System.out.println(time + " Noon ");
+            }else if(time <= 17) {
+                // if(time == 13) System.out.println();
+                System.out.print(time + " Afternoon. ");
+            }else if(time == 18) {
+                System.out.println();
+                System.out.print(time + " Night. ");
+            }else System.out.print(time + " Night. ");
+            }
 
-        // print the time from 0 until 24 and add the Morning (0-12), noon (12), afternoon (12-5), night (5-24)
+
 
     }
 }
