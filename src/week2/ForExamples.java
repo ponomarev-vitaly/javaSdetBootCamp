@@ -18,7 +18,7 @@ public class ForExamples {
             // 2 *3 = 6
             // 6 *4 = 24
             // 24*5 = 120
-            // 120*6 = 720
+
         }
         System.out.println(result);
 
