@@ -13,6 +13,12 @@ public class ForExamples {
         int result = 1;
         for(int mult = 1; mult<=fact; mult++){  // this is the mult value
             result = result * mult;    // result *= mult         // 1 2 3 4 5 *result
+            // 1 *1 = 1
+            // 1 *2 = 2
+            // 2 *3 = 6
+            // 6 *4 = 24
+            // 24*5 = 120
+            // 120*6 = 720
         }
         System.out.println(result);
 
