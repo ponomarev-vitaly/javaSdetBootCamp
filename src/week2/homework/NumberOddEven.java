@@ -8,13 +8,15 @@ public class NumberOddEven {
         System.out.printf("Please enter the number: ");
         Scanner scan = new Scanner(System.in);
         byte number = scan.nextByte();
-        int remainder = number % 2;
-        if (remainder == 0) {
-            System.out.printf("You entered even number: " + number);
-        } else if (remainder > 0) {
-            System.out.printf("You entered odd number: " + number);
-        }  // else if (number == 0)
-        // System.out.printf("Probably you have entered 0. Give it another try!");
-
+        if (number == 0) {
+            System.out.println("It's a zero, no need to check the remainder!");
+        } else {
+            int remainder = number % 2;
+            if (remainder == 0) {
+                System.out.printf("You entered even number: " + number);
+            } else if (remainder > 0) {
+                System.out.printf("You entered odd number: " + number);
+            }
+        }
     }
 }
