@@ -20,7 +20,7 @@ public class ForExamples {
             // 24*5 = 120
 
         }
-        System.out.println(result);
+        System.out.println("Result of " + fact + " factor is " + result);
 
     }
 }
