@@ -23,5 +23,7 @@ public class ForLoop1 {
 
         }
 
+        // print the time from 0 until 24 and add the Morning (0-12), noon (12), afternoon (12-5), night (5-24)
+
     }
 }
