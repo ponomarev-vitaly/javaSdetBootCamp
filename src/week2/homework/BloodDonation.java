@@ -12,7 +12,7 @@ for blood donation,
 
 public class BloodDonation {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); //Created Scanner Class Object.
         System.out.println("Please enter your age: ");
         int age = scan.nextInt();
         System.out.println("Please enter your weight in pounds: ");
