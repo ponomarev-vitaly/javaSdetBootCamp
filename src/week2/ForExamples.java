@@ -10,7 +10,11 @@ public class ForExamples {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter the number from 1 to 10: ");
         int fact = scan.nextInt();
-        for(int mult = 1; )
+        int result = 1;
+        for(int mult = 1; mult<=fact; mult++){  // this is the mult value
+            result = result * mult;    // result *= mult         // 1 2 3 4 5 *result
+        }
+        System.out.println(result);
 
     }
 }
