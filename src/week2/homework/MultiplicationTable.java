@@ -10,10 +10,9 @@ public class MultiplicationTable {
         1*4=4
         1*10=10
         */
-
+        int mult = 9;
         for(int i = 1; i <= 10; i++){
-
+            System.out.println(mult + "*" + i + " = " + mult * i);
         }
-
     }
 }
