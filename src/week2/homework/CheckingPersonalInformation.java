@@ -23,9 +23,8 @@ import java.util.Scanner; // Import JAVA library for the Scanner.
  */
 public class CheckingPersonalInformation {
     public static void main(String[] args) {
-        while (true) {
-            int option = 1;
-            if (option == 1){
+        String option = " ";
+        for(int i = 1; i <= 3; i++) {
                 Scanner scan = new Scanner(System.in); // Create a Scanner - object from the Scanner Class.
                 System.out.println("Please enter your Name: "); // Directions for the user to enter personal information.
                 String name = scan.nextLine(); // Get the data from the user with Scanner object.
@@ -37,16 +36,19 @@ public class CheckingPersonalInformation {
                 String phone = scan.nextLine();
                 System.out.println("Enter your city: ");
                 String city = scan.nextLine();
+
+                Scanner scan1 = new Scanner(System.in);
                 System.out.println("Please verify your personal data: \n" + "Name            : " + name + "\nGender          : " + gender +
                         "\nAge             : " + age + "\nPhone Number    : " + phone + "\nCity            : " + city);
 
                 System.out.println("Select an option from below: 1 or 2. \n1 - All given information is correct, \n2 - I need to re-enter the information.");
-                option = scan.nextInt();}
-//        if (option == 1)
-//            System.out.println("Thanks for your confirmation, we saved your details.");
-//        else
-//            System.out.println("Go to the beginning and start answering the same questions again!");
+                option = scan1.next();
+        if (option.equals("1")){
+            System.out.println("Thanks for your confirmation, we saved your details.");
+            break;}
+        else if (!option.equals("2"))
+            System.out.println("You didn't enter 1 or 2. Please re-enter the your information.");
         }
-
     }
 }
+// Go to the beginning and start answering the same questions again!
