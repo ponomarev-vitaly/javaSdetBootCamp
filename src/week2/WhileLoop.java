@@ -9,5 +9,10 @@ public class WhileLoop {
             if(i==5)
             break;
         }
+
+        while(true){
+            System.out.println("Count # " + (i+1));
+            System.out.println("Hello, I am infinite.");
+        }
     }
 }
