@@ -18,5 +18,13 @@ public class WhileLoop {
                 break;
             i++;
         }
+
+        // Sum of 1 to 10
+        int x = 0;
+        int sum = 0;
+        while(x <= 10){
+            sum += x;
+            x++;
+        }
     }
 }
