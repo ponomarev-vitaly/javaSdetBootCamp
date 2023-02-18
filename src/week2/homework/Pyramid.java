@@ -14,7 +14,7 @@ public class Pyramid {
             for(int j = 1; j <= i; j++){
                 System.out.print("*");
             }
-            System.out.println();
+            System.out.println(); //The cursor is jumping to the next line.
         }
     }
 }
