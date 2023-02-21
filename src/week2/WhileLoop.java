@@ -26,5 +26,6 @@ public class WhileLoop {
             sum += x;
             x++;
         }
+        System.out.println(" sum value is : " + sum);
     }
 }
