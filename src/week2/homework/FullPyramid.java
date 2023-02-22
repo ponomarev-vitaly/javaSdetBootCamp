@@ -10,11 +10,20 @@ result should be like this;
  */
 public class FullPyramid {
     public static void main(String[] args) {
-        for (int i = 1; i < 10; i+=2) {
-            for (int j = 1; j <= i; j+=2) {
-                System.out.print("* ");
+        int stars = 1;
+        int spaces = 8;
+        for (int i = 1; i<= 5; i++){
+            for (int j = 1; j <= spaces; j++){
+                System.out.println(" ");
             }
-            System.out.println(); //The cursor is jumping to the next line.
+
+            for(int k=1; k <= stars; k++){
+                System.out.println("* ");
+            }
+
+            System.out.println();
+            stars += 2;
+            spaces += 2;
         }
     }
 }
