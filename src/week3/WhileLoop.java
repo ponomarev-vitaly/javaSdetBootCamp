@@ -22,5 +22,30 @@ public class WhileLoop {
            System.out.println(result);
         }
         System.out.println(counter + "! = " + result);
+
+        /*
+        print the numbers from 1 to 100, only even numbers; output: 2, 4, 6, 8 ... 100
+         */
+
+        System.out.println("Please enter the highest number to write even numbers: ");
+        int num = 100;
+        int result1 = 1;
+        while(result1 <= 100){
+            // if(result2 == 100) System.out.println(result2); // This is the first option to handle the task.
+            // else if(result2 % 2 == 0) System.out.print(result2 + ", ");
+
+            if(result1 % 2 == 0) System.out.print(result1 + ","); // // This is the first option to handle the task.
+            result1++;
+        }
+        System.out.println();
+// print the numbers from 1 to 100, only odd numbers; output: 1, 3, 5, 7 ... 99
+        int result2 = 1;
+        while(result2 <= 100){
+            if(result2 == 99) System.out.println(result2); // This is the first option to handle the task.
+            else if(result2 % 2 != 0) System.out.print(result2 + ", ");
+            result2++;
+        }
+
+
     }
 }
