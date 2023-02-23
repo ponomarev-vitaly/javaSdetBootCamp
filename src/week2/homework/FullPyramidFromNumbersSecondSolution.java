@@ -26,18 +26,18 @@ public class FullPyramidFromNumbersSecondSolution {
                     System.out.print(" ");
 
                     // Space between Numbers
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
 
                 // Pyramid printing
                 for (int j = 0; j <= x; j++)
                     System.out.print((i + j) < 10
-                            ? (i + j) + " "
+                            ? (i + j) + "  "
                             : (i + j) + " ");
 
                 for (int j = 1; j <= x; j++)
                     System.out.print((i + x - j) < 10
-                            ? (i + x - j) + " "
+                            ? (i + x - j) + "  "
                             : (i + x - j) + " ");
 
                 // By now we reach end for one row, so
