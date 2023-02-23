@@ -1,5 +1,8 @@
 package week3;
-
+// Homework
+// Create 2 methods: 1: getInfo() and 2: printInfo()
+// Create objects from different constructors and print the object info(fields).
+// While creating object use default value, parameterized constructor and assign the value after creating the object.
 public class ConstructorExample {
     // Fields/instance variables:
     String className;
@@ -21,9 +24,9 @@ public class ConstructorExample {
         this.grade = grade;
     }
 
-    public ConstructorExample(String className, String teacher) {
+    public ConstructorExample(String className, String grade) {
         this.className = className;
-        this.teacher = teacher;
+        this.grade = grade;
     }
 
     public ConstructorExample(String className, int roomNumber, String grade) {
@@ -39,7 +42,11 @@ public class ConstructorExample {
     }
 
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        ConstructorExample constructorExample = new ConstructorExample("Crazy", "7th grade");
+        System.out.println(constructorExample.className);
+        System.out.println(constructorExample.teacher);
+        System.out.println(constructorExample.grade);
     }
 }
