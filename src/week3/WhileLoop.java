@@ -45,7 +45,5 @@ public class WhileLoop {
             else if(result2 % 2 != 0) System.out.print(result2 + ", ");
             result2++;
         }
-
-
     }
 }
