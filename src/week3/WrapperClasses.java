@@ -43,6 +43,11 @@ public class WrapperClasses {
         int numberValue = Integer.parseInt(number); //
         System.out.println(numberValue + 6); // 1234 + 6 = 1240
 
+        // ValueOf methods: converts String to Wrapper class values, returns wrapper class values.
+        String stringNumber3 = "2343.5678"; // + 7.0 = 2350.5679
+        Float floatNumber = Float.valueOf(stringNumber3); // parseFloat()
+        System.out.println(floatNumber + 7); // We get the result 2350.5679
+
 
     }
 }
