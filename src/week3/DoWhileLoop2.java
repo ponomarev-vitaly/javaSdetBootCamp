@@ -17,12 +17,21 @@ public class DoWhileLoop2 {
             System.out.println("The door opened now.");
             passCode = false;
         }
+        do {
+            System.out.println("Welcome to our company, the door will be opened in 2 seconds...");
+            System.out.println("The door opened now.");
+            passCode = false;
+        }while(passCode);
 
         System.out.println("Please enter the door code: ");
         userCode = scan.nextInt();
         while(doorCode == userCode){
             System.out.println("Welcome to our Company...");
-            break;
+            userCode = -1;
         }
+        do {
+            System.out.println("Welcome to our Company...");
+            userCode = -1;
+        }while(doorCode == userCode);
     }
 }
