@@ -48,6 +48,5 @@ public class WrapperClasses {
         Float floatNumber = Float.valueOf(stringNumber3); // parseFloat()
         System.out.println(floatNumber + 7); // We get the result 2350.5679
 
-
     }
 }
