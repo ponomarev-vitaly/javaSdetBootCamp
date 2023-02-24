@@ -19,12 +19,15 @@ public class FullPyramidFromNumbers {
         int rows = scan.nextInt();
 
 
-        for (int i = 0; i < rows; i++){
+        for (int i = 0; i < rows; i++){ // Creating rows.
             for (int k = ((rows - i)*2-1); k > 1; k--) { // This loop displays " "
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <= (2*i+1); j++){ // This loop displays "*"
+            for (int j = i; j <= (2*i+1); j++){ // This loop displays numbers.
+//                for () {
+//
+//                }
                 System.out.print(j + " ");
             }
 
