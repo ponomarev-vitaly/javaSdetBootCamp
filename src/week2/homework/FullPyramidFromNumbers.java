@@ -17,19 +17,23 @@ public class FullPyramidFromNumbers {
         Scanner scan = new Scanner(System.in);
         System.out.printf("Please enter the number of rows you want to display: ");
         int rows = scan.nextInt();
+        int i, k, j, n, counter = 1;
 
+        for (i = 0; i < rows; i++){ // Creating rows.
 
-        for (int i = 0; i < rows; i++){ // Creating rows.
-            for (int k = ((rows - i)*2-1); k > 1; k--) { // This loop displays " "
+            for (k = ((rows - i)*2-1); k > 1; k--) { // This loop displays " "
                 System.out.print(" ");
             }
 
-            for (int j = i; j <= (2*i+1); j++){ // This loop displays numbers.
-//                for () {
-//
-//                }
-                System.out.print(j + " ");
+            for (j = i; j < (2*i+1); j++) { // This loop displays numbers when they increment from theirs minimum.
+                System.out.print((j + 1) + " ");
             }
+// This part of code doesn't work properly.
+            for (n = i ; n < ((counter-1)+i); n++) { // This loop displays numbers when they decrement from theirs maximum.
+                System.out.print(((counter-1)+i) + " ");
+
+            }
+            counter++;
 
             System.out.println();
         }
