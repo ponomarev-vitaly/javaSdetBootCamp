@@ -15,12 +15,19 @@ public class DoWhileLoop {
 
     public static void main(String[] args) {
         // if x < 10 add the x value to total variable. the initial value of the x = 4.
-        int x = 4;
+        int x = 11;
         int total = 0;
         while(x<10){
             total = x + total; // total += x
             x++;
         }
+        System.out.println("Total number: " + total);
+
+        total = 0;
+        do{
+            total += x;
+            x++;
+        }while(x<10);
         System.out.println("Total number: " + total);
     }
 }
