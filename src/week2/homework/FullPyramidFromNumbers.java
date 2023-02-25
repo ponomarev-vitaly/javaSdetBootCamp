@@ -24,16 +24,25 @@ public class FullPyramidFromNumbers {
             for (k = ((rows - i)*2-1); k > 1; k--) { // This loop displays " "
                 System.out.print(" ");
             }
+            int x = 0;
 
-            for (j = i; j < (2*i+1); j++) { // This loop displays numbers when they increment from theirs minimum.
+            for (j = i; j < (2*i+1); j++) { // This loop displays numbers when they increase from theirs minimum.
                 System.out.print((j + 1) + " ");
+                x = j;
+                while(x == 2 * i + 1){
+                    System.out.println(j-1);
+                    if (j == i +1) {
+                        x--;
+                    }
+                    j--;
+                }
             }
 // This part of code doesn't work properly.
-            for (n = i ; n < ((counter-1)+i); n++) { // This loop displays numbers when they decrement from theirs maximum.
-                System.out.print(((counter-1)+i) + " ");
-
-            }
-            counter++;
+//            for (n = i ; n < ((counter-1)+i); n++) { // This loop displays numbers when they decrease from theirs maximum.
+//                System.out.print(((counter-1)+i) + " ");
+//
+//            }
+//            counter++;
 
             System.out.println();
         }
