@@ -30,11 +30,5 @@ public class TernaryOperator {
         biggestNumber = (d >= b) ? ((d >= c) ? "d is the biggest number" : "c is the biggest number") : (b >= c) ? "b is the biggest number" : "c is the biggest number";
         System.out.println(biggestNumber);
 
-
-
-
-
-
-
     }
 }
