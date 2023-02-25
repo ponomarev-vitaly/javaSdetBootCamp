@@ -24,5 +24,17 @@ public class TernaryOperator {
         String mathGrade = (math >= 45 && math < 60) ? "Your grade is D" : "We didn't find your grade";
         System.out.println(mathGrade);
 
+        // b, c, d integers variables. Find the biggest one with the ternary operator.
+        int b = 3, c = 4, d = 1;
+        String biggestNumber;
+        biggestNumber = (d >= b) ? ((d >= c) ? "d is the biggest number" : "c is the biggest number") : (b >= c) ? "b is the biggest number" : "c is the biggest number";
+        System.out.println(biggestNumber);
+
+
+
+
+
+
+
     }
 }
