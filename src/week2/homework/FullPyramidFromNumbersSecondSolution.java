@@ -30,15 +30,15 @@ public class FullPyramidFromNumbersSecondSolution {
                 }
 
                 // Pyramid printing
-                for (int j = 0; j <= x; j++)
-                    System.out.print((i + j) < 10
-                            ? (i + j) + "  "
-                            : (i + j) + " ");
+                for (int j = 0; j <= x; j++) {
+                    if ((i + j) < 10) System.out.print((i + j) + "  ");
+                    else System.out.print((i + j) + " ");
+                }
 
-                for (int j = 1; j <= x; j++)
-                    System.out.print((i + x - j) < 10
-                            ? (i + x - j) + "  "
-                            : (i + x - j) + " ");
+                for (int j = 1; j <= x; j++) {
+                    if ((i + x - j) < 10) System.out.print((i + x - j) + "  ");
+                    else System.out.print((i + x - j) + " ");
+                }
 
                 // By now we reach end for one row, so
                 // new line to switch to next
