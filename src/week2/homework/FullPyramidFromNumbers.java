@@ -38,11 +38,11 @@ public class FullPyramidFromNumbers {
                 }
             }
 // This part of code doesn't work properly.
-//            for (n = i ; n < ((counter-1)+i); n++) { // This loop displays numbers when they decrease from theirs maximum.
-//                System.out.print(((counter-1)+i) + " ");
-//
-//            }
-//            counter++;
+            for (n = i ; n < ((counter-1)+i); n++) { // This loop displays numbers when they decrease from theirs maximum.
+                System.out.print(((counter-1)+i) + " ");
+
+            }
+            counter++;
 
             System.out.println();
         }
