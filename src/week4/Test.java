@@ -11,6 +11,8 @@ public class Test {
     Test(){
         System.out.println("Constructor called ");
     }
+
+    public static void main(String[] args) {
     // We created inner main class.
     class Main{
         public static void main(String[] args) {
@@ -21,5 +23,6 @@ public class Test {
 
         }
 
+    }
     }
 }
