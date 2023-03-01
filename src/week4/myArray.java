@@ -26,6 +26,16 @@ public class myArray {
         System.out.println(element2);
         System.out.println(element3);
 
+        for(int i = 0; i < myArray.length; i++){ // Start the scope block. Our biggest index number is 2, not 3.
+            System.out.println(myArray[i]); // output --> 7, 15, 42
+        }
+
+        String fruits[] = {"Apple", "Banana", "Orange", "Avocado", "Strawberry"}; // We created string array.
+        System.out.print("Fruits name: ");
+        for(int i = 0; i < fruits.length; i++){
+            System.out.print(fruits[i] + ", ");
+        }
+
 
     }
 }
