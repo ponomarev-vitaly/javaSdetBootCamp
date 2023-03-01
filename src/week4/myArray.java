@@ -49,6 +49,18 @@ public class myArray {
            if(i != myArray.length-1) System.out.print(myArray[i] + ", "); // Can use != operator to change if and else statements.
            else System.out.print(myArray[i]);
         }
-        // System.out.println(myArray[0]);
+
+        int reversed[] = new int[3];
+        int counter = 0;
+        System.out.println();
+        for(int i = myArray.length - 1; i>= 0; i--){
+            reversed[counter] = myArray[i];
+            System.out.print(reversed[counter] + ", ");
+            counter++;
+//            for(int j = 0; j < reversed.length; j++){
+//                reversed[j] = myArray[i];
+//                System.out.print(reversed[i]);
+//            }
+        }
     }
 }
