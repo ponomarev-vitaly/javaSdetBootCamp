@@ -36,6 +36,19 @@ public class myArray {
             System.out.print(fruits[i] + ", ");
         }
 
+        /**
+         * Type a program like; given an array whose length is 3, return an array with the elements "rotated left".
+         * For ex., if the array is [7,15,42] output will be [15,42,7].
+         */
+        System.out.println();
+        int temp = myArray[0];
+        for(int i = 0; i < myArray.length; i++){
+           if(i+1 == myArray.length) myArray[i] = temp;
+           else myArray[i] = myArray[i+1];
 
+           if(i != myArray.length-1) System.out.print(myArray[i] + ", "); // Can use != operator to change if and else statements.
+           else System.out.print(myArray[i]);
+        }
+        // System.out.println(myArray[0]);
     }
 }
