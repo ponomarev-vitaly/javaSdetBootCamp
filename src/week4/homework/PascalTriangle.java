@@ -11,7 +11,16 @@ package week4.homework;
  *  1   5   10   10  5   1
  */
 public class PascalTriangle {
+    public static void main(String[] args) { // Initialize main method.
+        int rows = 6;
+        int number = 1;
+        for(int i = 1; i <= rows; i++){ // The first for loop to display the rows.
+//            for(int j = ; j < ; j--){
+//
+//            }
+        }
 
+    }
 
 
 }
