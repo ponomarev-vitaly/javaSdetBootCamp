@@ -5,10 +5,10 @@ package week4.homework;
  */
 public class SumArray {
     public static void main(String[] args) {
-        int sum = 0; // Initialize the variable for the sum of the array.
+        double sum = 0; // Initialize the variable for the sum of the array.
         double[] numericArray = {11.6,25.0,55555.3,45645654.9,1.0,33.33}; // Create an array.
         for (int i = 0; i < numericArray.length; i++) {
-            sum = (int) (numericArray[i] + sum);
+            sum = numericArray[i] + sum;
         }
         System.out.printf("The sum of the elements of the array is: " + sum);
     }
