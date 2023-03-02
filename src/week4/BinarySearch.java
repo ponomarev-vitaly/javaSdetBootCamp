@@ -28,5 +28,12 @@ public class BinarySearch {
         Arrays.sort(arr5);
         Arrays.sort(arr6);
         System.out.println(Arrays.equals(arr5,arr6)); // The result is true because the indexes' numbers are the same.
+
+        // Split method.
+        String str = "What about JAVA, did you like it?";
+        String arr[] = str.split(","); // In case we use the element not included in the string the result will be an Exception: ArrayIndexOutOfBoundsException.
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+
     }
 }
