@@ -5,9 +5,9 @@ package week4.homework;
 public class TestSpecificValueInArray {
     public static void main(String[] args) {
         int numberArr[] = {344, 555, 66, 88, 999, 66, 55};
-        int number = 100;
+        int number = 88;
         System.out.println(contains(numberArr, number));
-        boolean check = contains(numberArr, number);
+        boolean check = contains(numberArr, 111);
         System.out.println(check);
         // contains(numberArr, 99); // Call for the contains method.
     }
