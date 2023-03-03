@@ -19,11 +19,13 @@ public class GetTheStringCharacter {
         int index = scan.nextInt();
         System.out.println("The character at position " + index + " is " + originalStr.charAt(index));
 
+// This code has to be checked again and modified.
 //        for(int i = index; i < originalStr.length(); i++){
 //            if(index <= originalStr.length()) {
 //                if (i == originalStr.indexOf(i))
 //                    System.out.println("The character at position " + index + " is " + originalStr.charAt(i));
 //            }else System.out.println("You entered the index out of the range!");
+//
 //        }
     }
 }
