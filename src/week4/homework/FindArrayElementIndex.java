@@ -13,9 +13,9 @@ public class FindArrayElementIndex {
     }
 
     public static int index(int arr[], int specificNumber){
-        int index = 0;
+        int index = -1;
         for(int i = 0; i < arr.length; i++){
-            if(arr[i] == specificNumber) index = arr[i];
+            if(arr[i] == specificNumber) index = i;
         }
         return index;
     }
