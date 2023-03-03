@@ -51,5 +51,13 @@ public class StringMethods {
         // compareTo() method
         System.out.println(string1.compareTo(string2));
 
+        // ESCAPE characters in String
+        String string4 = "This is the \"String\" class.\n'A' ";
+        System.out.println(string4);
+
+        // Creating strings using the new keyword.
+        String name = new String("Java String.");
+        System.out.println(name);
+
     }
 }
