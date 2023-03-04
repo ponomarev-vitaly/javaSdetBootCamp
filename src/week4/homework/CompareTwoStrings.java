@@ -10,8 +10,8 @@ package week4.homework;
  */
 public class CompareTwoStrings {
     public static void main(String[] args) {
-        String str1 = "This is Exercise 1";
-        String str2 = "This is Exercise 2";
+        String str1 = "Hello World!";
+        String str2 = "Hello World!";
 //        if(str1.length()==str2.length()){
 //            // Add new check-up for the characters and positions.
 //        } else if(str1.length()<str2.length()){
