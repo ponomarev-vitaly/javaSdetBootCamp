@@ -9,6 +9,9 @@ package week4.homework;
  */
 public class StringsConcatenation {
     public static void main(String[] args) {
+        String str1 = "PHP Exercises and";
+        String str2 = "Python Exercises";
+
 
     }
 }
