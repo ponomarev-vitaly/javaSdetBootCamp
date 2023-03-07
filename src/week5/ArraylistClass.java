@@ -1,9 +1,7 @@
 package week5;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class ArraylistClass {
     public static void main(String[] args) {
@@ -78,5 +76,11 @@ public class ArraylistClass {
         arrList.clear();
         System.out.println(arrList.isEmpty());
         System.out.println(arrList.size());
+
+        // How to convert an ArrayList to an Array?
+
+        String arr[] = arrList2.toArray(new String[0]);
+        System.out.println("arr array's length: " + arr.length);
+        System.out.println("arr array's elements" + Arrays.toString(arr));
     }
 }
