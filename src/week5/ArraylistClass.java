@@ -73,5 +73,10 @@ public class ArraylistClass {
         System.out.println("The updated original arrayList(arrList): " + arrList);
         System.out.println("The updated original arrayList(arrList2): " + arrList2);
         System.out.println(arrList.equals(arrList2));
+
+        // clear() method provides an easy way to discard all elements of the ArrayList.
+        arrList.clear();
+        System.out.println(arrList.isEmpty());
+        System.out.println(arrList.size());
     }
 }
