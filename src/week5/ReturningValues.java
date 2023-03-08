@@ -4,7 +4,7 @@ public class ReturningValues {
     public static void main(String[] args) {
         int number = 1; // 1
         String letters = "abc"; // abc
-        number(number); // 1
+        number(number); // 1 number =
         letters = letters(letters); // abcd
         System.out.println(number + letters);  // 1abcd
     }
