@@ -92,8 +92,11 @@ public class ArraylistClass {
         newList.set(3, "Alex");
         System.out.println(newArr[3]); // Instead of Ali comes Alex.
 
-        // Note: throws UnsupportedOperation Exception because we are not allowed to change the size of the list. It is fixed size list.
-        // list.remove(1);
+// Note: If you update the elements through Array methods or List methods, both array elements
+//  and list elements  will be aﬀected.
+//  Because they point to the same data store.
+//  list.remove(1);
+
 
 
     }
