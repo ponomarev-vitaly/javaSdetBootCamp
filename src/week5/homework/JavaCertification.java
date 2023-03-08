@@ -11,14 +11,14 @@ public class JavaCertification {
 //    int j;
     public static void main(String[] args) {
 // Question 1. The result for this question is: Welcome Log2:2. There is no such an answer!!!
-//        int x = 1;
-//        int y = 1;
-//        if(x++ > ++y){
-//            System.out.println("Hello ");
-//        } else {
-//            System.out.println("Welcome ");
-//        }
-//        System.out.println("Log " + x + ":" + y);
+        int x = 1;
+        int y = 1;
+        if(x++ < ++y){ // Pay attention to <
+            System.out.print("Hello ");
+        } else {
+            System.out.print("Welcome ");
+        }
+        System.out.print("Log " + x + ":" + y);
 
         // Question 2. A. The answer is 10 : 30 : 6.
 
@@ -32,9 +32,9 @@ public class JavaCertification {
 //        System.out.println(date);
 
         // Question 4. The answer is C.
-        int[] stack = {10,20,30};
-        int size = 3;
-        int idx = 0;
+//        int[] stack = {10,20,30};
+//        int size = 3;
+//        int idx = 0;
         /* line n1 */
         // A option. The result is 20.
 //        do{
@@ -45,10 +45,10 @@ public class JavaCertification {
 //            idx++;
 //        }
         // C option. The result is 30.
-        do{
-            idx++;
-        } while (idx < size-1);
-        System.out.println("The Top element: " + stack[idx]);
+//        do{
+//            idx++;
+//        } while (idx < size-1);
+//        System.out.println("The Top element: " + stack[idx]);
 
         // Question 5. Which statement is true about the switch statement? A. It must contain the default section.
         // Question 6. Given the code fragment. Which two modifications should you make so that the code compiles successfully?
@@ -67,39 +67,40 @@ public class JavaCertification {
 //                x2.j
 //        );
         // Question 8. Given the code fragment. What is the result? The answer is ABCDE. B option.
-        String[][] arr = {{"A", "B", "C"}, {"D", "E"}};
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < arr[i].length; j++){
-                System.out.println(arr[i][j] + " ");
-                if (arr[i][j].equals("B")){
-                    continue;
-                }
-            }
-            continue;
-        }
+        // String[][] arr = {{"A", "B", "C"}, {"D", "E"}};
+//        for(int i = 0; i < arr.length; i++){
+//            for(int j = 0; j < arr[i].length; j++){
+//                System.out.println(arr[i][j] + " ");
+//                if (arr[i][j].equals("B")){
+//                    continue;
+//                }
+//            }
+//            continue;
+//        }
         // Question 9. Given code, which fragment should you use at line n1 to instantiate the dvd object successfully?
-        class CD {
-            int r;
-            CD(int r) {
-                this.r=r;
-            }
-        }
-
-        class DVD extends CD {
-            int c;
-            DVD(int r, int c) {
-                // line n1
-                super(r);
-                this.c = c;
-            }
-        }
-
-        // And given the code fragment:
-        DVD dvd = new DVD(10, 20);
-        // Question 10. The answer is 400 200, option A.
-        int var1 = 200;
-        System.out.println(doCalc(var1));
-        System.out.println(" " + var1);
+//      Inheritance question. Check it later.
+//        class CD {
+//            int r;
+//            CD(int r) {
+//                this.r=r;
+//            }
+//        }
+//
+//        class DVD extends CD {
+//            int c;
+//            DVD(int r, int c) {
+//                // line n1
+//                super(r);
+//                this.c = c;
+//            }
+//        }
+//
+//        // And given the code fragment:
+//        DVD dvd = new DVD(10, 20);
+//        // Question 10. The answer is 400 200, option A.
+//        int var1 = 200;
+//        System.out.println(doCalc(var1));
+//        System.out.println(" " + var1);
 
         // Question 11. Given the code fragment. What is the result.
 //        String[] strs = {"A", "B"};
@@ -114,8 +115,8 @@ public class JavaCertification {
 
     }
 
-    static int doCalc(int var1) {
-        var1 = var1 * 2;
-        return var1;
-    }
+//    static int doCalc(int var1) {
+//        var1 = var1 * 2;
+//        return var1;
+//    }
 }
