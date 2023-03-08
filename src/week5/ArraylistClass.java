@@ -83,5 +83,18 @@ public class ArraylistClass {
         String arr[] = arrList2.toArray(new String[0]);
         System.out.println("arr array's length: " + arr.length);
         System.out.println("arr array's elements" + Arrays.toString(arr));
+
+        String newArr[] = {"Vitalii", "Mustafa", "Ramazan", "Ali"}; // Created an array.
+        List<String> newList = Arrays.asList(newArr); // Convert array to ArrayList.
+        System.out.println(newList);
+        System.out.println("newList ArrayList size is: " + newList.size());
+
+        newList.set(3, "Alex");
+        System.out.println(newArr[3]); // Instead of Ali comes Alex.
+
+        // Note: throws UnsupportedOperation Exception because we are not allowed to change the size of the list. It is fixed size list.
+        // list.remove(1);
+
+
     }
 }
