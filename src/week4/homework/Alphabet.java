@@ -30,7 +30,7 @@ public class Alphabet {
         for(int i = 0; i < arr.length; i++){
             if(number2>number1){
 
-            }else System.out.println("You have entered the numbers out of the range!");
+            }else System.out.println("You have entered the Numbers out of the range!");
         }
     return;
     }

@@ -24,10 +24,10 @@ public class WhileLoop {
         System.out.println(counter + "! = " + result);
 
         /*
-        print the numbers from 1 to 100, only even numbers; output: 2, 4, 6, 8 ... 100
+        print the Numbers from 1 to 100, only even Numbers; output: 2, 4, 6, 8 ... 100
          */
 
-        System.out.println("Please enter the highest number to write even numbers: ");
+        System.out.println("Please enter the highest number to write even Numbers: ");
         int num = 100;
         int result1 = 1;
         while(result1 <= 100){
@@ -38,7 +38,7 @@ public class WhileLoop {
             result1++;
         }
         System.out.println();
-// print the numbers from 1 to 100, only odd numbers; output: 1, 3, 5, 7 ... 99
+// print the Numbers from 1 to 100, only odd Numbers; output: 1, 3, 5, 7 ... 99
         int result2 = 1;
         while(result2 <= 100){
             if(result2 == 99) System.out.println(result2); // This is the first option to handle the task.

@@ -37,7 +37,7 @@ public class ArraylistClass {
 
         System.out.println("Removed the " + birds.remove(2) + " from the birds ArrayList which has index number 2.");
 
-        System.out.println(birds.remove(1)); // --> in we put 10, 15 or bigger numbers in remove method we will get an error (IndexOutOfBoundsException).
+        System.out.println(birds.remove(1)); // --> in we put 10, 15 or bigger Numbers in remove method we will get an error (IndexOutOfBoundsException).
 
         // size and set methods as below
         System.out.println(birds.size());

@@ -93,7 +93,7 @@ public class MyHomeworkClass {
 //    // Create a new class and main method with any name and copy below codes and correct the wrong comments.
 //     */
 //    // Java program to illustrate frequently used comment tags.
-//    /* * <h1>Find average of three numbers!</h1>
+//    /* * <h1>Find average of three Numbers!</h1>
 //     * The FindAvg program implements an application that
 //     * simply calculates average of three integers and Prints
 //     * the output on the screen.

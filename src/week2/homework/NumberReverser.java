@@ -30,7 +30,7 @@ public class NumberReverser {
 
             System.out.println("Reversed number is from Second For Loop : " + reversedNumber);
 
-            //                 012345 ---> index numbers of strng
+            //                 012345 ---> index Numbers of strng
             // String strng = "number"
         }
     }

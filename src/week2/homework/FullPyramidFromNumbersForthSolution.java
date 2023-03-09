@@ -1,7 +1,7 @@
 package week2.homework;
 
 /**
- * Program to print pyramid using numbers
+ * Program to print pyramid using Numbers
  * result should be like this;
  *         1
  *       2 3 2
@@ -20,7 +20,7 @@ public class FullPyramidFromNumbersForthSolution {
                 System.out.print("  ");
             }
 
-            for(int k=i; k < 2*i; k++){    // This code displays numbers.
+            for(int k=i; k < 2*i; k++){    // This code displays Numbers.
                 System.out.print(number + " ");
                 if (k < rows + i - 1) {
                     number++;
@@ -29,7 +29,7 @@ public class FullPyramidFromNumbersForthSolution {
                 }
             }
 
-            for (int l = number1; l > number1 - i + 1; l--) { // This code displays numbers when they begin to decrease.
+            for (int l = number1; l > number1 - i + 1; l--) { // This code displays Numbers when they begin to decrease.
                 if(i>=1) System.out.print(l + " ");
             }
 

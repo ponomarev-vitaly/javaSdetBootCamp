@@ -16,8 +16,8 @@ public class ForLoop1 {
             System.out.println("We will win!");
         }
 
-        // print the even numbers until 50
-        System.out.print("Even numbers: ");
+        // print the even Numbers until 50
+        System.out.print("Even Numbers: ");
         for(int i = 0; i < 51; i++){
             if(i % 2 == 0) System.out.print(i + "-"); // output 0 2 4 6 ... 50
 

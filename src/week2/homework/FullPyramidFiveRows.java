@@ -1,6 +1,6 @@
 package week2.homework;
 /**
-Program to print pyramid using numbers
+Program to print pyramid using Numbers
 result should be like this;
         1
       2 3 2
@@ -15,10 +15,10 @@ public class FullPyramidFiveRows {
             for(int k = ((rows-i)*2-1); k > 1; k--){ // Display spaces.
                 System.out.print(" ");
             }
-            for(int j = i; j < (2*i+1); j++){ // This loop displays numbers until the moment they increase.
+            for(int j = i; j < (2*i+1); j++){ // This loop displays Numbers until the moment they increase.
                 System.out.print((j+1) + " ");
             }
-            // This loop displays numbers when they begin to decrease.
+            // This loop displays Numbers when they begin to decrease.
             for(int n = 1; n <= rows; n++ ){
                 if(i==1) System.out.print(2 + " ");
                 else if(i>=2 && (i + rows - n)<10){

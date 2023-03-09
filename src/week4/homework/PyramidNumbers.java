@@ -12,7 +12,7 @@ public class PyramidNumbers {
                     System.out.print("  ");
                 }
 
-                // print numbers for each row
+                // print Numbers for each row
                 for (int k = num; k >= num - i + 1; k--) {
                     System.out.print(k + " ");
                 }

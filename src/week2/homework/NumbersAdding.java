@@ -1,7 +1,7 @@
 package week2.homework;
 import java.util.Scanner;
 /*
-5- Write a java program for adding 2 numbers (user scanner class for user inputs)
+5- Write a java program for adding 2 Numbers (user scanner class for user inputs)
  */
 public class NumbersAdding {
     public static void main(String[] args) {
@@ -11,6 +11,6 @@ public class NumbersAdding {
         System.out.printf("Please enter the second number: ");
         int numberTwo = scan.nextInt();
         int sum = numberOne + numberTwo;
-        System.out.printf("The result of summarising two numbers is: " + sum);
+        System.out.printf("The result of summarising two Numbers is: " + sum);
     }
 }

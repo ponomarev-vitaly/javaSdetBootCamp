@@ -1,6 +1,6 @@
 package week2.homework;
 /*
-Program to print pyramid using numbers
+Program to print pyramid using Numbers
 result should be like this;
         1
       2 3 2

@@ -21,7 +21,7 @@ public class PascalTriangle {
                 System.out.print("__");
             }
 
-            for (int k = i; k < 2 * i; k++) {    // This code displays numbers.
+            for (int k = i; k < 2 * i; k++) {    // This code displays Numbers.
                 System.out.print(number + " ");
                 if (k < rows + i - 1) {
                     number++;
@@ -30,7 +30,7 @@ public class PascalTriangle {
                 }
             }
 
-            for (int l = number1; l > number1 - i + 1; l--) { // This code displays numbers when they begin to decrease.
+            for (int l = number1; l > number1 - i + 1; l--) { // This code displays Numbers when they begin to decrease.
                 if (i >= 1) System.out.print(l + " ");
             }
 

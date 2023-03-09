@@ -47,7 +47,7 @@ public class BreakAndContinueKeywords {
         }
         System.out.println(sum);
 
-        // Print the even numbers only from 1 to 100.
+        // Print the even Numbers only from 1 to 100.
         // 2,4,6,8,10...100
 
         int number = 1;

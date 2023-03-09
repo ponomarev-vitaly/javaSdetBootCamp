@@ -3,7 +3,7 @@ package week2.homework;
 import java.util.Scanner;
 
 /*
-Program to print pyramid using numbers
+Program to print pyramid using Numbers
 result should be like this;
         1
       2 3 2
@@ -26,12 +26,12 @@ public class FullPyramidFromNumbers {
             }
 
 
-            for (j = i; j < (2*i+1); j++) { // This loop displays numbers when they increase from theirs minimum.
+            for (j = i; j < (2*i+1); j++) { // This loop displays Numbers when they increase from theirs minimum.
                 System.out.print((j + 1) + " ");
 
             }
 // This part of code doesn't work properly.
-            for (n = counter ; n >= counter - i + 1; n--) { // This loop displays numbers when they decrease from theirs maximum.
+            for (n = counter ; n >= counter - i + 1; n--) { // This loop displays Numbers when they decrease from theirs maximum.
                 System.out.print(n + " ");
 
             }

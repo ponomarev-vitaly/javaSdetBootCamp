@@ -13,7 +13,7 @@ public class FloydsTriangle {
         int rows = 4;
         int number1 = 4;
         for(int i = 0; i< rows; i++){ // This for loop to display the rows.
-            for(int number = i; number < (2*i+1); number++){ // This for loop to display the numbers.
+            for(int number = i; number < (2*i+1); number++){ // This for loop to display the Numbers.
                 if(i <= 1){
                     System.out.print((number + 1) + " ");
                 }

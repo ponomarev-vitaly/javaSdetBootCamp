@@ -1,6 +1,6 @@
 package week2.homework;
 /*
-Inverted half pyramid using numbers
+Inverted half pyramid using Numbers
 result should be like this;
 1 2 3 4 5
 1 2 3 4
