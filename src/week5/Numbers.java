@@ -26,5 +26,10 @@ public class Numbers {
         Collections.sort(num, Collections.reverseOrder());
         System.out.println(num);
 
+        System.out.println("num Arraylist's size: " + num.size()); // Using the size method.
+
+        // Using contains method to check whether the number is in the arraylist.
+        System.out.println("num arraylist contains 500 or not? --> " + num.contains(500));
+
     }
 }
