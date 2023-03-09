@@ -21,5 +21,10 @@ public class Numbers {
         num.add(3, 100);
         System.out.println(num);
 
+        // Sorting the arraylist in a descending order.
+        System.out.println(num);
+        Collections.sort(num, Collections.reverseOrder());
+        System.out.println(num);
+
     }
 }
