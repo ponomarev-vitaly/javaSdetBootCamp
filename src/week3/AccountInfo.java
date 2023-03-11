@@ -18,6 +18,8 @@ public class AccountInfo {
         System.out.println("Name: " + accountInfo1.name);
         System.out.println("Surname: " + accountInfo1.surname);
         System.out.println("Gender: " + accountInfo1.gender);
+
+        accountInfo.getInfo(); // We call getInfo method.
     }
 
     // method to get an info
