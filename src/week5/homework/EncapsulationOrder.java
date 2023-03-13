@@ -7,4 +7,5 @@ package week5.homework;
  * variables : customerName, OrderNumber, Orders, OrderPrice, orderPrice, changeMoney
  */
 public class EncapsulationOrder {
+
 }
