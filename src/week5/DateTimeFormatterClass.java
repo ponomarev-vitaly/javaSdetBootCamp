@@ -42,7 +42,7 @@ public class DateTimeFormatterClass {
         afterFormat = dtf2.format(myDate);
         System.out.println("AfterFormat = " + afterFormat);
 
-        DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("EEEE, dd MMM yyy"); // This patter is used to right the full name of the day.
+        DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("EEEE, dd MMM yyy"); // This pattern is used to right the full name of the day.
         myDate = myDate.plusMonths(5);
         afterFormat = dtf3.format(myDate);
         System.out.println("afterFormat = " + afterFormat);
