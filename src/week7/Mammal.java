@@ -2,12 +2,12 @@ package week7;
 
 public class Mammal extends Animal{
     public Mammal(int age){
-        super();
+        super(); // super() keyword is calling parent class constructor
         System.out.println("Child constructor called by this().");
     }
 
     public Mammal(){
-        this(15);
+        this(15); // this() keyword is calling the constructor inside this class
         System.out.println("Child constructor");
     }
 
