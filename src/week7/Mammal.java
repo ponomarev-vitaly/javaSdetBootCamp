@@ -17,7 +17,8 @@ public class Mammal extends Animal{
     }
 
     public static void main(String[] args) {
-        Mammal mammal = new Mammal();
+        Object mammal = new Mammal(); // We can use Object (like FATHER from the class). We can use var to declare the object beginning from the 10th of Java.
+// If we use Animal except Mammal we USE ALL THE FUNCTIONALITY of the parent class (all variables, objects, methods, etc.).
 //        Mammal m2 = new Mammal(25); // We call parameterized constructor Mammal(int age), after that super() keyword calls the constructor from the parent class.
 //        Mammal mammalName = new Mammal("John");
     }
