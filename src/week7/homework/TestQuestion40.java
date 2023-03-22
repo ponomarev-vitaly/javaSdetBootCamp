@@ -10,7 +10,7 @@ public class TestQuestion40 {
         // System.out.println(keys.toString());
     }
 
-    public static int[] findMax(int[] numbers){
+    static int[] findMax(int[] max){
         int[] keys = new int[3];
         return keys;
     }
