@@ -18,6 +18,11 @@ public class RidingApp {
         dev02.whatIdo(); // If we define
         dev03.whatIdo();
 
+        System.out.println(dev03.getClass());
+        System.out.println(dev03.getClass().isInstance(new InputDevices()));
+        System.out.println(dev03.getClass().isInstance(new Keyboard()));
+        System.out.println(dev03.getClass().isInstance(new Microphone()));
+
         dev01.justATest();
         dev02.justATest();
 
