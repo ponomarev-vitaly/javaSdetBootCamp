@@ -2,7 +2,7 @@ package week7.Vehicle;
 
 public class Truck extends Car{
     private int load;
-    /*
+
     public int getLoad() {
         return load;
     }
@@ -10,7 +10,7 @@ public class Truck extends Car{
     public void setLoad(int load) {
         this.load = load;
     }
-    */
+
 
     public Truck(String brand, String model, int NOW, int NOP, String color, boolean isElectric, String VIN, int load) {
         super(brand, model, NOW, NOP, color, isElectric, VIN);
