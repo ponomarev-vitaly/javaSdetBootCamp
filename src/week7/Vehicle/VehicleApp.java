@@ -1,11 +1,12 @@
 package week7.Vehicle;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class VehicleApp {
     static Scanner scan = new Scanner(System.in);
-    static ArrayList<Vehicle> vehicles = new ArrayList<>();
+    static List<Vehicle> vehicles = new ArrayList<>(); // The name of the constructor in this line is after equals sign.
     public static void main(String[] args) {
         // scan.next(); // To call the Scanner object class from the main method there's another option: create an object, call the method.
         int option = -1;
@@ -21,6 +22,9 @@ public class VehicleApp {
                     break;
                 case 5:
                     listAll();
+                    break;
+                case 8:
+                    removeVehicle();
                     break;
             }
             for(Vehicle v: vehicles){
@@ -97,5 +101,37 @@ public class VehicleApp {
         for(Vehicle v : vehicles){
             System.out.println((counter++) + " -> " + v.toString() );
         }
+    }
+
+    public static boolean removeVehicle(){ // We should apply to the unique number - like VIN.
+        boolean flag = false;
+        System.out.println("Please enter the brand you want to delete. ");
+        String brand01 = scan.next();
+        Vehicle vch = new Vehicle();
+//        if (brand01.equals(vch.getBrand())){
+//            System.out.printf(vch.getBrand());
+//            vehicles.remove(brand01);
+//            flag = true;
+//        }
+        for (Vehicle w:vehicles // w - vehicles is listed one by one.
+             ) {
+//            w.getBrand().equals(brand01);
+            if (w.getBrand().equals(brand01)){
+                System.out.printf(vch.getBrand());
+                vehicles.remove(brand01);
+                flag = true;
+            }
+        }
+//        System.out.println("Enter the VIN number you want to remove: ");
+//        String numVIN = scan.next();
+//        Car car01 = new Car();
+//        numVIN.equals(car01.getVIN());
+//        for(int i = 0; i < vehicles.size(); i++){
+//
+//        }
+//        if(numVIN.equals(vehicles.)){
+//
+//        }
+        return flag;
     }
 }

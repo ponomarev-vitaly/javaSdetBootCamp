@@ -6,7 +6,7 @@ public class Vehicle {
     private int numOfWheels;
     private int numOfPassengers;
     private String color;
-    /*
+
     public String getBrand() {
         return brand;
     }
@@ -46,13 +46,17 @@ public class Vehicle {
     public void setColor(String color) {
         this.color = color;
     }
-    */
+
     public Vehicle(String brand, String model, int NOW, int NOP, String color){
         this.brand = brand;
         this.model = model;
         this.numOfWheels = NOW;
         this.numOfPassengers = NOP;
         this.color = color;
+    }
+
+    public Vehicle(){
+
     }
 
     public String toString(){
