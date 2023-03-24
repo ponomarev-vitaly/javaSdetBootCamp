@@ -1,5 +1,7 @@
 package week4.homework;
 
+import java.util.Scanner;
+
 /**
  *1. Write a Java program to get the character at the given index within the String.
  * Sample Output:
@@ -87,7 +89,30 @@ public class JavaStringExercises {
             System.out.println("String 1 and String 2 are lexicographically equal, ignoring case differences!");
         } else System.out.println("String 1 and String 2 are NOT lexicographically equal!");
         // 4th exercise.
+        String str5 = "PHP Exercises and";
+        String str6 = "Python Exercises";
+        System.out.println(str5 + " " + str6);
+        // 5th exercise.
+        comparison();
 
+
+
+    }
+
+    public static void comparison(){
+        System.out.printf("Enter the String you want to compare: ");
+        Scanner scan = new Scanner(System.in);
+        String strExample = scan.nextLine();
+        StringBuffer sb = new StringBuffer("example.com");
+        // StringBuffer sb1 = new StringBuffer(strExample);
+        /**
+         * because StringBuffer#toString method returns the String value of the data stored inside the buffer:
+         * Returns a string representing the data in this sequence.
+         * A new String object is allocated and initialized to contain the character sequence currently represented by this object.
+         * This String is then returned. Subsequent changes to this sequence do not affect the contents of the String.
+         */
+        if(sb.toString().equals(strExample)) System.out.println("You have entered String, which is equal to the equivalent!");
+            else System.out.println("String you have entered is not equal to the equivalent!");
 
     }
 }
