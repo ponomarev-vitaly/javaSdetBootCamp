@@ -57,18 +57,18 @@ public class VehicleApp {
         System.out.print("Enter the model ...> ");
         String model = scan.next();
         System.out.print("Enter number of wheels ...> ");
-        int NOW = scan.nextInt();
+        String numOfWheels = scan.next();
         System.out.print("Passengers cap. ...> ");
-        int NOP = scan.nextInt();
+        String numOfPassengers = scan.next();
         System.out.print("Enter the color ...> ");
         String color = scan.next();
         System.out.print("(E) Electric (X) Gasoline ...> ");
         String gas = scan.next();
         boolean electric = gas.compareToIgnoreCase("E") == 0 ? true : false;
         System.out.print("Enter the VIN ...> ");
-        String VIN = scan.next();
+        String vin = scan.next();
 
-        Car temp = new Car(brand, model, NOW, NOP, color, electric, VIN);
+        Car temp = new Car(brand, model, numOfWheels, numOfPassengers, color, electric, vin);
         vehicles.add(temp);
     }
 
@@ -79,20 +79,20 @@ public class VehicleApp {
         System.out.print("Enter the model ...> ");
         String model = scan.next();
         System.out.print("Enter number of wheels ...> ");
-        int NOW = scan.nextInt();
+        String numOfWheels = scan.next();
         System.out.print("Passengers cap. ...> ");
-        int NOP = scan.nextInt();
+        String numOfPassengers = scan.next();
         System.out.print("Enter the color ...> ");
         String color = scan.next();
         System.out.print("(E) Electric (X) Gasoline ...> ");
         String gas = scan.next();
         boolean electric = gas.compareToIgnoreCase("E") == 0 ? true : false;
         System.out.print("Enter the VIN ...> ");
-        String VIN = scan.next();
+        String vin = scan.next();
         System.out.println("Enter the Load ...> ");
         int load = scan.nextInt();
 
-        Truck temp = new Truck(brand, model, NOW, NOP, color, electric, VIN, load);
+        Truck temp = new Truck(brand, model, numOfWheels, numOfPassengers, color, electric, vin, load);
         vehicles.add(temp);
     }
 
@@ -105,33 +105,17 @@ public class VehicleApp {
 
     public static boolean removeVehicle(){ // We should apply to the unique number - like VIN.
         boolean flag = false;
-        System.out.println("Please enter the brand you want to delete. ");
-        String brand01 = scan.next();
-        Vehicle vch = new Vehicle();
-//        if (brand01.equals(vch.getBrand())){
-//            System.out.printf(vch.getBrand());
-//            vehicles.remove(brand01);
-//            flag = true;
-//        }
-        for (Vehicle w:vehicles // w - vehicles is listed one by one.
+        System.out.println("Please enter VIN number to remove.");
+        String vinRemove = scan.next();
+
+        for (Vehicle v:vehicles // w - vehicles is listed one by one.
              ) {
-//            w.getBrand().equals(brand01);
-            if (w.getBrand().equals(brand01)){
-                System.out.printf(vch.getBrand());
-                vehicles.remove(brand01);
+            if (v.equals(vinRemove)){
+                System.out.printf(String.valueOf(v));
+                vehicles.remove(v);
                 flag = true;
             }
         }
-//        System.out.println("Enter the VIN number you want to remove: ");
-//        String numVIN = scan.next();
-//        Car car01 = new Car();
-//        numVIN.equals(car01.getVIN());
-//        for(int i = 0; i < vehicles.size(); i++){
-//
-//        }
-//        if(numVIN.equals(vehicles.)){
-//
-//        }
         return flag;
     }
 }

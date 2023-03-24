@@ -11,9 +11,8 @@ public class Truck extends Car{
         this.load = load;
     }
 
-
-    public Truck(String brand, String model, int NOW, int NOP, String color, boolean isElectric, String VIN, int load) {
-        super(brand, model, NOW, NOP, color, isElectric, VIN);
+    public Truck(String brand, String model, String numOfWheels, String numOfPassengers, String color, boolean isElectric, String vin, int load) {
+        super(brand, model, numOfWheels, numOfPassengers, color, isElectric, vin);
         this.load = load;
     }
 
