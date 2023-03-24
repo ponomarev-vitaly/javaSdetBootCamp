@@ -1,6 +1,7 @@
 package week7.Vehicle;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,7 +25,7 @@ public class VehicleApp {
                     listAll();
                     break;
                 case 8:
-                    removeVehicle();
+                    System.out.println("Removed! " + removeVehicle());
                     break;
             }
             for(Vehicle v: vehicles){
@@ -108,14 +109,22 @@ public class VehicleApp {
         System.out.println("Please enter VIN number to remove.");
         String vinRemove = scan.next();
 
-        for (Vehicle v:vehicles // w - vehicles is listed one by one.
-             ) {
-            if (v.equals(vinRemove)){
-                System.out.printf(String.valueOf(v));
-                vehicles.remove(v);
+        for(Iterator<Vehicle> itr = vehicles.iterator(); itr.hasNext();){ // Added an Iterator to iterate the ArrayList.
+            Vehicle vehicle = itr.next();
+            if(vehicle.getVin().equals(vinRemove)){
+                itr.remove();
                 flag = true;
             }
         }
+
+//        for (Vehicle v:vehicles // w - vehicles is listed one by one.
+//             ) {
+//            if (v.equals(vinRemove)){
+//                System.out.printf(String.valueOf(v));
+//                vehicles.remove(v);
+//                flag = true;
+//            }
+//        }
         return flag;
     }
 }
