@@ -10,7 +10,7 @@ public class TryCatch {
             file = new FileInputStream("c:/textfile.txt");
         }
         catch(IOException e){
-            System.out.println("The specified file is not present at the given path.");
+            System.out.println("The specified file is not present at the given path. " + e);
         }
     }
 }
