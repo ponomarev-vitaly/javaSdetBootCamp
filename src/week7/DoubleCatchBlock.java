@@ -6,7 +6,7 @@ public class DoubleCatchBlock {
     // Create try catch block.
     public void writeList(){
         try{
-            arr[10]=11;
+            arr[10]=11; // We get this result in the console: IndexOutOfBoundsException => Index 10 out of bounds for length 10.
         } catch (NumberFormatException eNF){
             System.out.println("NumberFormatException => " + eNF.getMessage());
         }
