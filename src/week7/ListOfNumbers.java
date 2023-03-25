@@ -20,6 +20,7 @@ public class ListOfNumbers {
             for (int i = 0; i < list.length; i++) {
                 out.println("Value at: " + i + " = " + list[i]);
             }
+
         } catch(IOException e){
             throw new RuntimeException(e);
 
