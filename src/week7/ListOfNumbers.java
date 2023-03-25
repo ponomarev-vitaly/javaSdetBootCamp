@@ -14,7 +14,7 @@ public class ListOfNumbers {
         try{
             System.out.println("Entering try statement");
             // Creating new file OutputFile.txt. Important to use capital F letter in the name of the file.
-            out = new PrintWriter(new FileWriter("OutputFile.txt"));
+            out = new PrintWriter(new FileWriter("C:\\Java\\ClaruswayProject\\src\\week7\\OutputFile.txt"));
             
             // Writing value from list array to OutputFile.txt.
             for (int i = 0; i < list.length; i++) {
