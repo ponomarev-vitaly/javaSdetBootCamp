@@ -20,6 +20,8 @@ public class ListOfNumbers {
             for (int i = 0; i < list.length; i++) {
                 out.println("Value at: " + i + " = " + list[i]);
             }
+            out.println("Clarusway SDET Course."); // This is a sample sentence to demonstrate that sth new will be rewritten at the end of the file.
+
         } catch(IOException e){ // Create an object from IOException.
            // Throw new RuntimeException(e).
             System.out.println("Exception => " + e.getMessage());
