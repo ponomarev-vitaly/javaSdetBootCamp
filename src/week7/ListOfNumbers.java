@@ -16,7 +16,7 @@ public class ListOfNumbers {
             // Creating new file OutputFile.txt. Important to use capital F letter in the name of the file.
             out = new PrintWriter(new FileWriter("OutputFile.txt"));
             
-            // writing value from list array to OutputFile.txt
+            // Writing value from list array to OutputFile.txt.
             for (int i = 0; i < list.length; i++) {
                 out.println("Value at: " + i + " = " + list[i]);
             }
@@ -25,6 +25,10 @@ public class ListOfNumbers {
             System.out.println("Exception => " + e.getMessage());
         } finally{
           // Checking if the PrintWriter has been opened.
+          if(out!=null){
+              // Close PrintWriter.
+              System.out.println("Closing PrintWriter");
+          }
         }
     }
 }
