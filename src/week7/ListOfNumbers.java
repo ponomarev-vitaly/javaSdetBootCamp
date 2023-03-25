@@ -20,7 +20,7 @@ public class ListOfNumbers {
             for (int i = 0; i < list.length; i++) {
                 out.println("Value at: " + i + " = " + list[i]);
             }
-        } catch(IOException e){
+        } catch(IOException e){ // Create an object from IOException.
            // Throw new RuntimeException(e).
             System.out.println("Exception => " + e.getMessage());
         } finally{
