@@ -36,7 +36,7 @@ public class ListOfNumbers {
     }
 
     public static void main(String[] args) {
-        ListOfNumbers list = new ListOfNumbers();
-        list.writeList();
+        ListOfNumbers list = new ListOfNumbers(); // Create class object.
+        list.writeList(); // Call the method which is writer.
     }
 }
