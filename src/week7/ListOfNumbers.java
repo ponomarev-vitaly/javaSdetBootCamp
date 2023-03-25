@@ -21,14 +21,22 @@ public class ListOfNumbers {
                 out.println("Value at: " + i + " = " + list[i]);
             }
         } catch(IOException e){
-           // throw new RuntimeException(e);
+           // Throw new RuntimeException(e).
             System.out.println("Exception => " + e.getMessage());
         } finally{
           // Checking if the PrintWriter has been opened.
           if(out!=null){
-              // Close PrintWriter.
               System.out.println("Closing PrintWriter");
+              // Close PrintWriter.
+              out.close();
+          }else{
+              System.out.println("PrintWriter is not opened.");
           }
         }
+    }
+
+    public static void main(String[] args) {
+        ListOfNumbers list = new ListOfNumbers();
+        list.writeList();
     }
 }
