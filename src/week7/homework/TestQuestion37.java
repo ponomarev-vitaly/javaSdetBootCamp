@@ -11,8 +11,9 @@ public class TestQuestion37 {
         for(int e: data){
             if(e != key){
                 continue;
-                // count++; // Delete unreachable stateent!
+                // count++; // Delete unreachable statement! In that case count++ is inside the SCOPE, foreach loop won't reach it.
             }
+
         }
         System.out.println(count + " Found");
     }
