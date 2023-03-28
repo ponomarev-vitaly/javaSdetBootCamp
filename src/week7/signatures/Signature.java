@@ -13,7 +13,7 @@ public class Signature {
         return 2;
     }
 
-    public int add2(String c, int d){ // THe 4th and the 1st methods have exact duplicates, this is not acceptable to run an application.
+    public int add2(String c, int d){ // The 4th and the 1st methods have exact duplicates, this is not acceptable to run an application.
         // The solution is to change the name of the method from add to add2.
         // Java cares about types of the variables!!!
         return 3;
