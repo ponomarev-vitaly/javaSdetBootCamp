@@ -10,6 +10,6 @@ public class JavaStringExercises1 {
     public static void main(String[] args) {
         String str = "Python Exercises";
         String str1 = "Python Exercise";
-
+        String temp;
     }
 }
