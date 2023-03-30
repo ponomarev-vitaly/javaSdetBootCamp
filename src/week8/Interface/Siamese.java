@@ -1,6 +1,8 @@
-package week8;
+package week8.Interface;
 
-public class Siamese extends Cat{
+import week8.Interface.Cat;
+
+public class Siamese extends Cat {
     @Override
     public void nurse(){
 

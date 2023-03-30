@@ -1,6 +1,7 @@
-package week8;
+package week8.Interface;
+
 // Create new class Cat.
-public abstract class Cat implements Animal, Mammal{
+public abstract class Cat implements Animal, Mammal {
 //    @Override
 //    public void eat() {
 //        System.out.println("Cats can eat fish.");
