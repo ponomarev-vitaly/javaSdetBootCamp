@@ -1,14 +1,11 @@
 package week8.homework.Interface;
 
-public class EmployeePojo {
+public class EmployeePojo implements Database {
     private String fName;
     private int empID;
     private int kids;
     private String education;
 
-    public EmployeePojo(String fName, int kids, String education) {
-
-    }
 
     public String getfName() {
         return fName;
@@ -43,9 +40,8 @@ public class EmployeePojo {
         this.education = education;
     }
 
-    public EmployeePojo(String fName, int empID, int kids, String education) {
+    public EmployeePojo(String fName, int kids, String education) {
         this.fName = fName;
-        this.empID = empID;
         this.kids = kids;
         this.education = education;
     }

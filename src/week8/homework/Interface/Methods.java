@@ -2,6 +2,8 @@ package week8.homework.Interface;
 
 import week8.Interface1.Inside;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Methods {
@@ -12,18 +14,38 @@ public class Methods {
     }
 
     public void createEmp(){
-        System.out.println("Please enter your full name: ");
-        String fName = scan.nextLine();
-        System.out.println("How many kids do you have? ");
-        int kids = scan.nextInt();
-        System.out.println("Please enter your degree: ");
-        scan.next();
-        String education = scan.next();
 
+        String fName = null;
+        System.out.println("Please enter your full name: ");
+        try {
+            fName = scan.nextLine();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            throw new InputMismatchException();
+        }
+
+        int kids = 0;
+        System.out.println("How many kids do you have? ");
+        try {
+            kids = scan.nextInt();
+        } catch (Exception e) {
+            throw new InputMismatchException();
+        }
+
+        String education = null;
+        System.out.println("Please enter your degree: ");
+        try {
+            education = scan.next();
+        } catch (Exception e) {
+            throw new InputMismatchException();
+        }
 
         EmployeePojo Emp01 = new EmployeePojo(fName, kids, education);
         Emp01.setEmpID(1000);
-        Employee.employeeList.add(Emp01);
-        System.out.println(Employee.employeeList);
+        Database.employeeList.add(Emp01);
+        for(EmployeePojo e: Database.employeeList){
+            System.out.println(e);
+        }
+        // System.out.println(Employee.employeeList); // We have to fix [] until next meeting.
     }
 }
