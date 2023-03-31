@@ -17,6 +17,7 @@ public class Methods {
 
         String fName = null;
         System.out.println("Please enter your full name: ");
+
         try {
             fName = scan.nextLine();
         } catch (Exception e) {
