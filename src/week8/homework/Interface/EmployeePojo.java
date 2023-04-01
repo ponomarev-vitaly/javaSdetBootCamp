@@ -6,7 +6,6 @@ public class EmployeePojo implements Database {
     private int kids;
     private String education;
 
-
     public String getfName() {
         return fName;
     }
@@ -40,10 +39,15 @@ public class EmployeePojo implements Database {
         this.education = education;
     }
 
-    public EmployeePojo(String fName, int kids, String education) {
+    public EmployeePojo(String fName, int empID, int kids, String education) {
         this.fName = fName;
         this.kids = kids;
         this.education = education;
+        this.empID = empID;
+    }
+
+    public EmployeePojo(){
+
     }
 
     @Override
