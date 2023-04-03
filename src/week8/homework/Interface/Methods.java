@@ -1,5 +1,6 @@
 package week8.homework.Interface;
 
+import javax.xml.crypto.Data;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,6 +20,7 @@ public class Methods {
     public static void main(String[] args) {
         Methods obj = new Methods();
         obj.createEmp();
+
     }
 
     public void createEmp(){
@@ -68,13 +70,14 @@ public class Methods {
         } finally {
             //scan.close(); // We changed scan.close() to
 
-            EmployeePojo Emp01 = new EmployeePojo();
-//            Emp01.setEmpID(1000);
-//            Database.employeeList.add(Emp01);
+            EmployeePojo Emp01 = new EmployeePojo(fName, empID, kids, education);
+            Database.employeeList.add(Emp01);
             for(EmployeePojo e: Database.employeeList){
                 System.out.println(e);
             }
         }
+        Methods obj = new Methods();
+        obj.updateEmp();
     }
     // We create update method here.
     public void updateEmp(){ // In this method we use the unique value ID number.
@@ -84,14 +87,68 @@ public class Methods {
         int ID = input.nextInt();
         for (EmployeePojo employeePojo : Database.employeeList) {
             if (employeePojo.getEmpID() == ID) {
-                int number = 0;
+                int number;
                 System.out.println("Do you want to update your Personal Data? (1-Yes/2-No)");
-                 if(number == 1){
+                // TryCatches check = new TryCatches(); // Create an object.
+                number = input.nextInt();
+                // check.enteringNumbers(number); // Call the enteringNumbers method on object.
+                if(number == 1){
+                    String fName = null;
+                    System.out.println("Please enter your full name: ");
+                    try {
+                        fName = input.next();
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                        throw new InputMismatchException();
+                    }
 
-                 }
+                    int empID = 0;
+                    boolean validInput = false;
+                    while (!validInput) {
+                        System.out.println("Please enter your valid employee ID number: ");
+                        try {
+                            empID = input.nextInt();
+                            validInput = true;
+                        } catch (InputMismatchException e) {
+                            System.out.println("Invalid input. Please enter a valid integer.");
+                            input.next();
+                        }
+                    }
 
+                    int kids = 0;
+                    boolean validInput1 = false;
+                    while (!validInput1) {
+                        System.out.println("How many kids do you have? ");
+                        try {
+                            kids = input.nextInt();
+                            validInput1 = true;
+                        } catch (InputMismatchException e) {
+                            System.out.println("Invalid input. Please enter a valid integer.");
+                            input.next();
+                        }
+                    }
 
+                    String education = null;
+                    System.out.println("Please enter your degree: ");
+                    try {
+                        education = input.next();
+                    } catch (Exception e) {
+                        System.out.println("Invalid input. Please enter a valid degree.");
+                    } finally {
 
+                    System.out.println("Your old data is that:");
+                    for(EmployeePojo w: Database.employeeList){ // Print out all the data to the user.
+                        System.out.println(w);
+                    }
+
+                    EmployeePojo Emp01 = new EmployeePojo(fName, empID, kids, education);
+                    int index = Emp01.indexOf(Emp01);
+                    Database.employeeList.set(index, Emp01);
+                    for(EmployeePojo e: Database.employeeList){
+                        System.out.println(e);
+                    }
+                    }
+                }
                 // Database.employeeList.set();
             }
         }

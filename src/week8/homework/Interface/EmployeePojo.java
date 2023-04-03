@@ -52,11 +52,22 @@ public class EmployeePojo implements Database {
 
     @Override
     public String toString() {
-        return "EmployeePojo{" +
+        return "EmployeePojo" +
                 "fName='" + fName + '\'' +
                 ", empID=" + empID +
                 ", kids=" + kids +
-                ", education='" + education + '\'' +
-                '}';
+                ", education='" + education + '\'';
+    }
+
+    // Create method for index number of the ArrayList.
+    public int indexOf(EmployeePojo employeePojo){
+        int index = 0;
+        for (EmployeePojo v: Database.employeeList
+             ) {
+            if(employeePojo.getEmpID()==v.getEmpID()){
+                index = Database.employeeList.indexOf(employeePojo);
+            }
+        }
+        return index;
     }
 }
