@@ -5,6 +5,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Iterator1 {
+    /**
+     * Limitations of the Iterator Interface.
+     * - The operation to replace an element or add a new element cannot be performed with this Iterator.
+     * - The Iteration proceeds only in one direction, forward direction.
+     * - Supports only sequential iteration.
+     * - EHwn large volume of information needs to be iterated, then the performance of the Iterator is affected.
+     *
+     */
     public static void main(String[] args) {
         List<String> list2 = new LinkedList<String>();
 
