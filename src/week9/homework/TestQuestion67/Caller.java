@@ -1,4 +1,4 @@
-package week9.TestQuestion67;
+package week9.homework.TestQuestion67;
 
 public class Caller {
     private void init(){

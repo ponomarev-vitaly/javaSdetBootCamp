@@ -1,6 +1,6 @@
-package week9.TestQuestion62;
+package week9.homework.TestQuestion62;
 
-class EBook extends Book{
+class EBook extends Book {
     public void readBook(){
         System.out.println("Read E-Book");
     }

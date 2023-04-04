@@ -1,4 +1,4 @@
-package week9.TestQuestion66;
+package week9.homework.TestQuestion66;
 
 public class main {
     public static void main(String[] args) {
