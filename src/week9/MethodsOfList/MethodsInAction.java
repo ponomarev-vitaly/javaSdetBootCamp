@@ -1,9 +1,6 @@
 package week9.MethodsOfList;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class MethodsInAction {
     public static void main(String[] args) {
@@ -33,6 +30,10 @@ public class MethodsInAction {
         Object newList = ((LinkedList<String>) list).clone(); // clone() clones the list. newList is an Object, it's one body.
         // list.clear(); // This code removes totally the list.
 
+        Collections.sort(list); // Firstly we convert the list into collection. sort() method can be applied to the collection.
+
+        // list.sort();
+
         System.out.println("The List: ");
         for (String str : list) {
             System.out.println(str);
@@ -49,12 +50,16 @@ public class MethodsInAction {
             System.out.println(check + " is not available in the list ");
         }
 
+        list.set(3, "Java");
+
         System.out.println("");
 
         System.out.println(list.contains("Bye"));
         System.out.println(list.get(3)); // list[3] this is how it worked in the arrays.
 
-        System.out.println("The New List: " + newList);
+        System.out.println("The New List: " + list.size()); // size() method is to measure the list.
+
+        // System.out.println("The Size of the List is " + newList);
 
 //        List<Object> newest = Arrays.asList(newList);
 //        System.out.println("The Newest: ");
