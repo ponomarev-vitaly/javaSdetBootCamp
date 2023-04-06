@@ -36,7 +36,7 @@ public class Application {
     }
 
     public static void listInteraction(){
-        System.out.println("--A--AF--AL--I--R--RF--RL--I--SW--I--L-- ");
+        System.out.println("--A--AF--AL--I--R--RF--RL--I--SW--I--L--");
         input = scan.next();
         if(input.compareTo("A")==0){
             System.out.println("Please enter an item >");
