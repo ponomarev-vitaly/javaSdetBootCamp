@@ -36,15 +36,16 @@ public class Application {
     }
 
     public static void listInteraction(){
-        System.out.println("--A--AF--AL--I--R--RF--RL--I--SW--I--L--");
+        System.out.println("--A--AF--AL--|--R--RF--RL--|--SW--|--L--");
         input = scan.next();
         if(input.compareTo("A")==0){
-            System.out.println("Please enter an item >");
+            System.out.print("Please enter an item >");
             input = scan.next();
             listHolder.get(selectedList).A(input);
         } else if(input.compareTo("L") == 0){
+            selectedList = -1;
             inMainMenu = false;
-            inListsMenu = false;
+            inListsMenu = true;
             theListsMenu = false;
         }
     }
@@ -64,8 +65,9 @@ public class Application {
             inMainMenu = true;
             inListsMenu = false;
         }else {
-           selectedList = Integer.parseInt(input) - 1;
+           selectedList = Integer.parseInt(input);
            if(selectedList>0){
+               selectedList--;
                inMainMenu = false;
                inListsMenu = false;
                theListsMenu = true;

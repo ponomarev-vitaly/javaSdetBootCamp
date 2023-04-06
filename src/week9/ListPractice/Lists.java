@@ -11,6 +11,10 @@ public class Lists {
         this.list = new LinkedList<String>();
     }
 
+    public String getlName(){
+        return lName;
+    }
+
     public void A(String in){
         list.add(in);
     }
@@ -23,13 +27,13 @@ public class Lists {
         list.addLast(in);
     }
 
-    public void R(String in){
+    public void R(int in){ //String in that code was in the parenthesis in my case.
         list.remove(in);
     }
 
-    public void RF(String in){
+    public void RF(){
         list.removeFirst();
-    }
+    } // String in that code was in the parenthesis in my case.
 
     public void RL(String in){
         list.removeLast();
@@ -52,7 +56,7 @@ public class Lists {
         }
     }
 
-    public String getlName() {
-        return lName;
-    }
+//    public String getlName() {
+//        return lName;
+//    }
 }
