@@ -45,7 +45,7 @@ public class Lists {
 
     public void D(){
         int counter = 1;
-        System.out.println("---------------------"+this.lName+"--------------------");
+        System.out.println("\n\n\n---------------------"+this.lName+"--------------------");
         for (String str: list
              ) {
             System.out.println((counter++)+". "+str);

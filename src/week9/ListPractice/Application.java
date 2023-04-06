@@ -1,5 +1,7 @@
 package week9.ListPractice;
 
+import week8.Interface1.Inside;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -7,8 +9,10 @@ public class Application {
     static Scanner scan = new Scanner(System.in);
     static boolean inMainMenu = true;
     static boolean inListsMenu = false;
+    static boolean theListsMenu = false;
     static LinkedList<Lists> listHolder = new LinkedList<Lists>();
     static String input = "";
+    static int selectedList;
 
     public static void main(String[] args) {
         while(input.compareTo("P") != 0){
@@ -19,6 +23,29 @@ public class Application {
             if(inListsMenu){
                 listsMenuOptions();
             }
+
+            if(inListsMenu){
+                listsMenuOptions();
+            }
+
+            if(theListsMenu){
+                listHolder.get(selectedList).D();
+                listInteraction();
+            }
+        }
+    }
+
+    public static void listInteraction(){
+        System.out.println("--A--AF--AL--I--R--RF--RL--I--SW--I--L-- ");
+        input = scan.next();
+        if(input.compareTo("A")==0){
+            System.out.println("Please enter an item >");
+            input = scan.next();
+            listHolder.get(selectedList).A(input);
+        } else if(input.compareTo("L") == 0){
+            inMainMenu = false;
+            inListsMenu = false;
+            theListsMenu = false;
         }
     }
 
@@ -36,6 +63,13 @@ public class Application {
         if(input.compareTo("M") == 0){
             inMainMenu = true;
             inListsMenu = false;
+        }else {
+           selectedList = Integer.parseInt(input) - 1;
+           if(selectedList>0){
+               inMainMenu = false;
+               inListsMenu = false;
+               theListsMenu = true;
+           }
         }
     }
 
