@@ -58,7 +58,7 @@ public class Lists {
 
     public boolean C(String in){
         boolean flag = true;
-        if(list.contains(in)) {
+        if(list.contains(in)) { // Ask the user, remove banana, add banana.
             if(list.indexOf(in)==0){
                 System.out.println("The item is in the first place!");
             }

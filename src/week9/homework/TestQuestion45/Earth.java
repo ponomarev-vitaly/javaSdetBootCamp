@@ -1,12 +1,12 @@
 package week9.homework.TestQuestion45;
 
-// class Earth extends Planet{
+ class Earth extends Planet{
 
-//    void revolve(){ // line n3.
-//
-//    }
-//
-//    protected void rotate(){ // line n4
-//
-//    }
-// }
+    protected void revolve(){ // line n3. Access modifier ust be the same level or LARGER AS in PARENT CLASS's access mod.
+
+    }
+
+    protected void rotate(){ // line n4
+
+    }
+ }
