@@ -2,6 +2,7 @@ package week9.ListPractice;
 
 import week8.Interface1.Inside;
 
+import java.sql.SQLOutput;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -35,14 +36,32 @@ public class Application {
         }
     }
 
-    public static void listInteraction(){
+    public static void listInteraction() {
         System.out.println("--A--AF--AL--|--R--RF--RL--|--SW--|--L--");
         input = scan.next();
-        if(input.compareTo("A")==0){
+        if (input.compareTo("A") == 0) {
             System.out.print("Please enter an item >");
             input = scan.next();
-            listHolder.get(selectedList).A(input);
-        } else if(input.compareTo("L") == 0){
+            if (listHolder.get(selectedList).ContainsMethod(input)) {
+                System.out.println("You have this item in the list!");
+            } else {listHolder.get(selectedList).A(input);}
+        } else if(input.compareTo("AF") == 0){
+            System.out.println("Please enter an item you want to add first ");
+            input = scan.next();
+            if (listHolder.get(selectedList).C(input)) {
+                System.out.println("You have this item in the list!");
+            } else {listHolder.get(selectedList).AF(input);}
+        } else if(input.compareTo("AL") == 0) {
+            System.out.println("Please enter an item you want to add last ");
+            input = scan.next();
+            if (listHolder.get(selectedList).C(input)) {
+                System.out.println("You have this item in the list!");
+            } else {listHolder.get(selectedList).AL(input);}
+        } else if(input.compareTo("R") == 0){
+            System.out.print("Please enter an item >");
+            input = scan.next();
+
+        }else if(input.compareTo("L") == 0){
             selectedList = -1;
             inMainMenu = false;
             inListsMenu = true;

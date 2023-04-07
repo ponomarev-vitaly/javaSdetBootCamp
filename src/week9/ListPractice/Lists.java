@@ -56,6 +56,28 @@ public class Lists {
         }
     }
 
+    public boolean C(String in){
+        boolean flag = true;
+        if(list.contains(in)) {
+            if(list.indexOf(in)==0){
+                System.out.println("The item is in the first place!");
+            }
+        } else{
+            flag = false;
+        }
+        return flag;
+    }
+
+    public boolean ContainsMethod(String in){
+        boolean flag1 = true;
+        if(list.contains(in)) {
+
+        } else{
+            flag1 = false;
+        }
+        return flag1;
+    }
+
 //    public String getlName() {
 //        return lName;
 //    }
