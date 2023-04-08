@@ -2,6 +2,8 @@ package week9;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class LinkedHashSetExample {
     public static void main(String[] args) {
@@ -27,6 +29,10 @@ public class LinkedHashSetExample {
         }
         System.out.println();
 
+        // We converted LinkedHashSet to TreeSet in order to sort it.
+        Set<String> setStr = new TreeSet<>(linkedHS);
+        System.out.println(setStr);
+
         // Only classes, interfaces begin with capital letter.
         LinkedHashSet<Integer> linkedHSInt = new LinkedHashSet<>();
         linkedHSInt.add(123);
@@ -47,5 +53,9 @@ public class LinkedHashSetExample {
             System.out.println(iteratorInt.next());
         }
         System.out.println();
+
+        // Sort the LinkedHashSet. Convert to TreeSet.
+        Set<Integer> setInt = new TreeSet<>(linkedHSInt);
+        System.out.println(setInt);
     }
 }
