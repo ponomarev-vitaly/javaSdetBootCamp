@@ -81,19 +81,25 @@ public class Methods implements SchoolManagement{
                     subMenu();
                     break;
                 case "2":
-                    create();
+                    search();
                     subMenu();
                     break;
                 case "3":
-                    create();
+                    list();
                     subMenu();
                     break;
                 case "4":
-                    create();
+                    delete();
                     subMenu();
                     break;
                 case "5":
-                    create();
+                    Main.mainMenu();
+                    break;
+                case "6":
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("You entered wrong data! Try again!");
                     subMenu();
                     break;
             }
@@ -101,6 +107,7 @@ public class Methods implements SchoolManagement{
 
     @Override
     public void search() {
+
 
     }
 
