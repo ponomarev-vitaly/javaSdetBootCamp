@@ -35,7 +35,7 @@ public class Methods implements SchoolManagement{
 
                         Student std = new Student(name, idNumber, age, studentNumber, course);
                         student.add(std);
-                        System.out.println("Added student is " + std.getFullName());
+                        System.out.println("Added student is: " + std.getFullName());
 
                     }
                 } catch (Exception e) {
@@ -43,6 +43,18 @@ public class Methods implements SchoolManagement{
                 }
 
                 } else { // For teacher.
+                    System.out.println("Enter your age: ");
+                    int age = input.nextInt();
+
+                    System.out.println("Enter your department: ");
+                    String department = input.next();
+
+                    System.out.println("Enter your teacher ID number: ");
+                    String teacherID = input.next();
+
+                    Teacher teacher = new Teacher(name, idNumber, age, department, teacherID);
+                    teachers.add(teacher);
+                    System.out.println("Added teacher: " + teacher.getFullName());
 
                 }
 
