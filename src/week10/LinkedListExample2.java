@@ -1,5 +1,6 @@
 package week10;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class LinkedListExample2 {
@@ -34,5 +35,7 @@ public class LinkedListExample2 {
 
         fruits.remove(2);
         System.out.println("Removed the element from index number 2: " + fruits);
+        fruits.clear(); // removeAll() is applied to Collections.
+        System.out.println("After using clear(): " + fruits);
     }
 }
