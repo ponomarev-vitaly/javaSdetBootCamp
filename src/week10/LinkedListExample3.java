@@ -29,5 +29,8 @@ public class LinkedListExample3 {
 
         c2.clear();
         System.out.println("Checking the c2 LinkedList is empty or not: " + c2.isEmpty());
+
+        colors.set(3, "Brown");
+        System.out.println("After applying set() brown color method for colors LinkedList " + colors);
     }
 }
