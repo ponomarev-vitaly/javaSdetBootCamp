@@ -91,7 +91,7 @@ public class CollectionLinkedList {
     public static LinkedList<String> insertSomeElements(LinkedList<String> list) {
         int i = 1;
         Scanner input = new Scanner(System.in);
-        System.out.println("How many elements you want to add?");
+        System.out.println("How many elements do you want to add?");
         int numberOfElements = input.nextInt();
         System.out.println("Now it's your turn to enter the String elements you want to store : ");
         LinkedList<String> list1 = new LinkedList<>();
