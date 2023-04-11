@@ -24,5 +24,15 @@ public class LinkedListExample2 {
 
         String fruit = fruits.get(Integer.parseInt(index)); // Converting one String to Integer.
         System.out.println(fruit);
+
+        fruits.remove();
+        System.out.println("After using remove(): " + fruits);
+
+        System.out.println(fruits.remove("Grape")); // boolean
+        System.out.println(fruits.remove("orange")); // boolean
+        System.out.println("Removed Grape and Orange: " + fruits);
+
+        fruits.remove(2);
+        System.out.println("Removed the element from index number 2: " + fruits);
     }
 }
