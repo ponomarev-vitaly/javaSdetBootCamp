@@ -96,7 +96,8 @@ public class Methods implements SchoolManagement{
                     Main.mainMenu();
                     break;
                 case "6":
-                    System.exit(0);
+                    exit();
+                    // System.exit(0);
                     break;
                 default:
                     System.out.println("You entered wrong data! Try again!");
@@ -156,11 +157,37 @@ public class Methods implements SchoolManagement{
 
     @Override
     public void exit() {
-
+        System.out.println("Come back again! ");
     }
 
     @Override
     public void delete() {
+        System.out.println(" *** Welcome to delete " + personType + " page ***");
+        boolean flag = true;
 
+        System.out.println("Enter ID number you want to search for: ");
+        String idNumber = input.next();
+
+        if(personType.equalsIgnoreCase("STUDENT")){ // BLOCK OF CODE TO SEARCH FOR STUDENTS.
+            for (Person each: student
+            ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("The student you search deleted " + each.getFullName());
+                    student.remove(each); // This line of code deletes the direct Student with ID number.
+                    flag = false;
+                }else System.out.println("There is no student with such " + idNumber);
+
+            }
+        } else { // BLOCK OF CODE TO SEARCH FOR TEACHERS.
+            for (Person each: teachers
+            ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("The teacher you search deleted " + each.getFullName());
+                    teachers.remove(each); // This line of code deletes the direct Teacher with ID number.
+                    flag = false;
+                }else System.out.println("There is no teacher with such " + idNumber);
+
+            }
+        }
     }
 }
