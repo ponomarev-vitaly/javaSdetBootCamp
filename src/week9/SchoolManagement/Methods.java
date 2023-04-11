@@ -107,8 +107,35 @@ public class Methods implements SchoolManagement{
 
     @Override
     public void search() {
+        System.out.println(" *** Welcome to search " + personType + " page ***");
+        boolean flag = true;
 
+        System.out.println("Enter ID number you want to search for: ");
+        String idNumber = input.next();
 
+        if(personType.equalsIgnoreCase("STUDENT")){ // BLOCK OF CODE TO SEARCH FOR STUDENTS.
+            for (Person each: student
+                 ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("The student you search " + each.getFullName());
+                    flag = false;
+                }else System.out.println("There is no student with such " + idNumber);
+                if(flag){
+                    System.out.println("There is no student with such " + idNumber);
+                }
+            }
+        } else { // BLOCK OF CODE TO SEARCH FOR TEACHERS.
+            for (Person each: teachers
+            ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("The teacher you search " + each.getFullName());
+                    flag = false;
+                }else System.out.println("There is no teacher with such " + idNumber);
+                if(flag){
+                    System.out.println("There is no teacher with such " + idNumber);
+                }
+            }
+        }
     }
 
     @Override
