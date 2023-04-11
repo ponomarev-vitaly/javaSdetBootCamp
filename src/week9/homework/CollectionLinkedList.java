@@ -2,6 +2,7 @@ package week9.homework;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 public class CollectionLinkedList {
@@ -56,6 +57,13 @@ public class CollectionLinkedList {
         // 8. Write a Java program to insert the specified element at the end of a linked list.
 
         // 9. Write a Java program to insert some elements at the specified position into a linked list.
+        insertSomeElements(list);
+        System.out.println(list);
+
+        // 10. Write a Java program to get the first and last occurrence of the specified elements in a linked list.
+        getTheFirstAndLastOccurence(list);
+
+        // 11. Write a Java program to display the elements and their positions in a linked list.
 
 
 
@@ -78,5 +86,48 @@ public class CollectionLinkedList {
             System.out.println(iterator.next());
         }
         System.out.println("*********** Here the iterator ends ***********");
+    }
+
+    public static LinkedList<String> insertSomeElements(LinkedList<String> list) {
+        int i = 1;
+        Scanner input = new Scanner(System.in);
+        System.out.println("How many elements you want to add?");
+        int numberOfElements = input.nextInt();
+        System.out.println("Now it's your turn to enter the String elements you want to store : ");
+        LinkedList<String> list1 = new LinkedList<>();
+
+        while(i <= numberOfElements){
+            System.out.print("Enter element " + i + ": ");
+            String element = input.next();
+            list1.add(element);
+            i++;
+        }
+
+        list.addAll(list1);
+
+        // We use this while loop to capitalize the first letter of every String element.
+        ListIterator<String> iterator1 = list.listIterator();
+        while (iterator1.hasNext()) {
+            String str = iterator1.next();
+            String capitalized = str.substring(0, 1).toUpperCase() + str.substring(1);
+            iterator1.set(capitalized);
+        }
+
+        return list;
+    }
+
+    public static void getTheFirstAndLastOccurence(LinkedList<String> list) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the element to search for: ");
+        String element = scan.nextLine();
+
+        int firstIndex = list.indexOf(element);
+        if (firstIndex != -1) {
+            int lastIndex = list.lastIndexOf(element);
+            System.out.println("First occurrence of \"" + element + "\" is at index " + firstIndex);
+            System.out.println("Last occurrence of \"" + element + "\" is at index " + lastIndex);
+        } else {
+            System.out.println("Element \"" + element + "\" not found in the list.");
+        }
     }
 }
