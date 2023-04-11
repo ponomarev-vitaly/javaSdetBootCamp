@@ -23,5 +23,11 @@ public class LinkedListExample3 {
         colors.addAll(c2);
 
         System.out.println("After combining c1 and c2 LinkedList to colors: " + colors);
+
+        System.out.println("Checking the colors LinkedList is empty or not: " + colors.isEmpty());
+        System.out.println("Checking the c1 LinkedList is empty or not: " + c1.isEmpty());
+
+        c2.clear();
+        System.out.println("Checking the c2 LinkedList is empty or not: " + c2.isEmpty());
     }
 }
