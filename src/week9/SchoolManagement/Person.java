@@ -13,6 +13,11 @@ public class Person {
         this.age = age;
     }
 
+    public Person(String fullName, int age) {
+        this.fullName = fullName;
+        this.age = age;
+    }
+
     public Person(){
 
     }
@@ -27,10 +32,6 @@ public class Person {
 
     public String getIdNumber() {
         return idNumber;
-    }
-
-    public void setIdNumber(String idNumber) {
-        this.idNumber = idNumber;
     }
 
     public int getAge() {

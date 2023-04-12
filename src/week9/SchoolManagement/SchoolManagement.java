@@ -11,7 +11,8 @@ public interface SchoolManagement {
 
     void exit();
     void delete();
+    void update();
 
-    List<Person> teachers = new ArrayList<>(); // This ArrayList is created to store teachers objects.
-    List<Person> student = new ArrayList<>(); // This ArrayList is created to store students objects.
+    List<Teacher> teachers = new ArrayList<>(); // This ArrayList is created to store teachers objects.
+    List<Student> student = new ArrayList<>(); // This ArrayList is created to store students objects.
 }

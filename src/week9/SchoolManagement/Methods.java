@@ -1,5 +1,6 @@
 package week9.SchoolManagement;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 import static week9.SchoolManagement.Person.personType;
@@ -27,10 +28,10 @@ public class Methods implements SchoolManagement{
                         throw new ArithmeticException("Your age is out of the range.");
                     } else {
                         // studentNumber, String course
-                        System.out.println("Enter your student number ");
+                        System.out.println("Enter your student number: ");
                         int studentNumber = input.nextInt();
 
-                        System.out.println("Enter your course ");
+                        System.out.println("Enter your course: ");
                         String course = input.next();
 
                         Student std = new Student(name, idNumber, age, studentNumber, course);
@@ -71,7 +72,8 @@ public class Methods implements SchoolManagement{
                     "2- SEARCH\n" +
                     "3- LIST\n" +
                     "4- DELETE\n" +
-                    "5- MAIN MENU\n" +
+                    "5- UPDATE\n" +
+                    "6- MAIN MENU\n" +
                     "Q- EXIT");
             String option=input.next();
 
@@ -93,9 +95,13 @@ public class Methods implements SchoolManagement{
                     subMenu();
                     break;
                 case "5":
-                    Main.mainMenu();
+                    update();
+                    subMenu();
                     break;
                 case "6":
+                    Main.mainMenu();
+                    break;
+                case "Q":
                     exit();
                     // System.exit(0);
                     break;
@@ -121,9 +127,6 @@ public class Methods implements SchoolManagement{
                     System.out.println("The student you search " + each.getFullName());
                     flag = false;
                 }else System.out.println("There is no student with such " + idNumber);
-//                if(flag){
-//                    System.out.println("There is no student with such " + idNumber);
-//                }
             }
         } else { // BLOCK OF CODE TO SEARCH FOR TEACHERS.
             for (Person each: teachers
@@ -168,7 +171,7 @@ public class Methods implements SchoolManagement{
         System.out.println("Enter ID number you want to search for: ");
         String idNumber = input.next();
 
-        if(personType.equalsIgnoreCase("STUDENT")){ // BLOCK OF CODE TO SEARCH FOR STUDENTS.
+        if(personType.equalsIgnoreCase("STUDENT")){ // BLOCK OF CODE TO DELETE STUDENTS.
             for (Person each: student
             ) {
                 if(idNumber.equalsIgnoreCase(each.getIdNumber())){
@@ -178,7 +181,7 @@ public class Methods implements SchoolManagement{
                 }else System.out.println("There is no student with such " + idNumber);
 
             }
-        } else { // BLOCK OF CODE TO SEARCH FOR TEACHERS.
+        } else { // BLOCK OF CODE TO DELETE TEACHERS.
             for (Person each: teachers
             ) {
                 if(idNumber.equalsIgnoreCase(each.getIdNumber())){
@@ -187,6 +190,74 @@ public class Methods implements SchoolManagement{
                     flag = false;
                 }else System.out.println("There is no teacher with such " + idNumber);
 
+            }
+        }
+    }
+
+    @Override
+    public void update() { // We create update method.
+        System.out.println(" *** Welcome to update " + personType + " page ***");
+        boolean flag = true;
+
+        System.out.println("Enter ID number you want to update for: ");
+        String idNumber = input.next();
+        input.nextLine();
+
+        if(personType.equalsIgnoreCase("STUDENT")){ // BLOCK OF CODE TO UPDATE STUDENTS.
+            for (Student each: student
+            ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("This is short information about the student you want to update " + each); // TO DO: get rid of {}
+
+                    System.out.println("Enter full name: ");
+                    String name = input.nextLine();
+                    each.setFullName(name);
+
+                    System.out.println("Enter student number: ");
+                    int studentNumber = input.nextInt();
+                    each.setStudentNumber(studentNumber);
+
+                    System.out.println("Enter your course: ");
+                    String course = input.nextLine();
+                    each.setCourse(course);
+                    input.nextLine();
+
+                    System.out.println("Enter your age: ");
+                    int age = input.nextInt();
+                    each.setAge(age);
+
+                    System.out.println("Updated student: " + each);
+
+                    flag = false;
+                }else {
+                    System.out.println("There is no student with such: " + idNumber);
+                }
+            }
+        } else { // BLOCK OF CODE TO UPDATE TEACHERS.
+            for (Teacher each: teachers
+            ) {
+                if(idNumber.equalsIgnoreCase(each.getIdNumber())){
+                    System.out.println("This is short information about the teacher you want to update " + each); // TO DO: get rid of {}
+
+                    System.out.println("Enter full name: ");
+                    String name = input.nextLine();
+                    each.setFullName(name);
+
+                    System.out.println("Enter teacher's ID number: ");
+                    String teacherID = input.nextLine();
+                    each.setTeacherID(teacherID);
+
+                    System.out.println("Enter department: ");
+                    String department = input.nextLine();
+                    each.setDepartment(department);
+
+                    System.out.println("Enter your age: ");
+                    int age = input.nextInt();
+                    each.setAge(age);
+
+                    System.out.println("Updated teacher: " + each);
+                    flag = false;
+                }else System.out.println("There is no teacher with such: " + idNumber);
             }
         }
     }
