@@ -11,12 +11,12 @@ import java.util.Scanner;
  */
 public class StringObjectsCompare {
     public static void main(String[] args) {
-//        String answer = "y";
+        boolean answer = true;
         do {
             Scanner scan1 = new Scanner(System.in);
             Scanner scan2 = new Scanner(System.in);
 
-            System.out.println("Please enter the first string to make a compare: ");
+            System.out.println("Please enter the first string to compare: ");
             String str1 = scan1.next();
             System.out.println("Please enter the second string to compare: ");
             String str2 = scan2.next();
@@ -26,8 +26,7 @@ public class StringObjectsCompare {
                 System.out.println("The strings you entered are NOT equal!");
             } else System.out.println("The strings you entered are equal!");
 
-//            System.out.println("Do you want to try one more time? Y/N");
-//            answer = scan.next();
-        } while (true);
+
+        } while (answer);
     }
 }
