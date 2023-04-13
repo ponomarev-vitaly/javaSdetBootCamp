@@ -14,6 +14,12 @@ public class NestedMap {
 //        nested1.put("ToDo", );
 //        nested1.put("Activities", );
 
+        Map<String, Map<String, Integer>> nested2 = new HashMap<>();
+        Map<String, Integer> nestedTree = new HashMap<>();
+        nested2.put("ABC", nestedTree);
+        nestedTree.put("CDE", 1000);
+        // nested2.put("ABC", nestedTree);
+
         nested.put("Shopping", new LinkedHashMap<>());
         nested.put("ToDo", new LinkedHashMap<>());
         nested.put("Activities", new LinkedHashMap<>());
