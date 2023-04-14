@@ -40,6 +40,16 @@ public class Main {
                 System.out.println("The color is green.");
                 break;
         }
+
+        // We can use ENUM class as an array with values() method. --> Colors.values()
+        for (Colors allColors : Colors.values()
+             ) {
+            System.out.println(allColors);
+        }
+
+        for (int i = 0; i < Colors.values().length; i++) {
+            System.out.println(Colors.values()[i]);
+        }
     }
 
     enum Days{
