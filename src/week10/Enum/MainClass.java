@@ -21,7 +21,7 @@ public class MainClass {
         // name() method returns ENUM constant as a String format.
         Size size = Size.LARGE;
         System.out.println(size.name());
-        //
-
+        //Java ENUM valueOf() returns value of ENUM constant.
+        System.out.println(Size.valueOf("EXTRALARGE"));
     }
 }
