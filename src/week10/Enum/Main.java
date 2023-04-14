@@ -2,6 +2,7 @@ package week10.Enum;
 
 public class Main {
     public static void main(String[] args) {
+        // Create a variable(Colors type) from Colors ENUM.
         Colors red = Colors.RED; // We created the variable red.
         Colors green = Colors.GREEN;
         System.out.println(red);
@@ -21,6 +22,24 @@ public class Main {
         Days sunday = Days.SUNDAY;
         System.out.println(wednesday);
         System.out.println(wednesday.ordinal());
+
+        // ENUM in switch statement.
+        Colors myColor = Colors.GREEN;
+
+        switch (myColor){
+            case RED:
+                System.out.println("The color is red.");
+                break;
+            case BLUE:
+                System.out.println("The color is blue.");
+                break;
+            case YELLOW:
+                System.out.println("The color is yellow.");
+                break;
+            case GREEN:
+                System.out.println("The color is green.");
+                break;
+        }
     }
 
     enum Days{
