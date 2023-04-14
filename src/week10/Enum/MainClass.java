@@ -1,5 +1,7 @@
 package week10.Enum;
 
+import java.util.Arrays;
+
 public class MainClass {
     public static void main(String[] args) {
         // This is how to use compareTo() method, compares ENUM constants based on their ordinal values /index number.
@@ -23,5 +25,8 @@ public class MainClass {
         System.out.println(size.name());
         //Java ENUM valueOf() returns value of ENUM constant.
         System.out.println(Size.valueOf("EXTRALARGE"));
+        // .values() return ENUM constants as an array.
+        Size[] enumArray = Size.values();
+        System.out.println(Arrays.toString(enumArray));
     }
 }
