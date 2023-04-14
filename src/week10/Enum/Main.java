@@ -19,6 +19,8 @@ public class Main {
         Days friday = Days.FRIDAY;
         Days saturday = Days.SATURDAY;
         Days sunday = Days.SUNDAY;
+        System.out.println(wednesday);
+        System.out.println(wednesday.ordinal());
     }
 
     enum Days{
