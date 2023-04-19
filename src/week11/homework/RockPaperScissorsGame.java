@@ -44,16 +44,18 @@ public class RockPaperScissorsGame {
                 while(replay){
                     int comp = (int)(Math.random()*3);
                     entry = playGame();
-                    if(comp == 0 ){
-                        if(entry.compareTo("R") == 0){
+                    if(comp == 0 ) {
+                        if (entry.compareTo("R") == 0) {
                             entry = whatNext("DRAW GAME");
                             games.get("DRAW").replace("Rock", games.get("DRAW").get("Rock") + 1);
+                        } else if (entry.compareTo("P") == 0) {
+                            entry = whatNext("PLAYER WINS");
+                            games.get("WIN").replace("Paper", games.get("WIN").get("Paper") + 1);
+                        } else {
+                            entry = whatNext("PLAYER LOSES");
+                            games.get("LOSE").replace("Paper", games.get("LOSE").get("Paper") + 1);
                         }
-
-                } else {
-                    entry = whatNext("PLAYER LOSES");
-                    games.get("LOSE").replace("Paper", games.get("LOSE").get("Paper") + 1);
-                }
+                    }
 
                 if (entry.compareTo("M") == 0){
                     replay = false;
