@@ -43,9 +43,9 @@ public class Theory {
 
         try {
             FileInputStream fis = new FileInputStream(firstFile); // By using FileInputStream is the 1st solution to read from the file.
-            System.out.println((char) fis.read()); //  70 -> F 72 -> H
-            System.out.println((char) fis.read()); //  114 -> r 101 -> e
-            System.out.println((char) fis.read()); //  111 -> o 108 -> l
+            System.out.println((char) fis.read()); //  70 -> F;  72 -> H
+            System.out.println((char) fis.read()); //  114 -> r; 101 -> e
+            System.out.println((char) fis.read()); //  111 -> o; 108 -> l
 
             System.out.println("---------------");
 
