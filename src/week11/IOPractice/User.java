@@ -38,14 +38,29 @@ public class User {
     }
 
     public User(String uName, String fName, String lName, int pass, boolean isManager) {
-        this.uName = uName;
-        this.fName = fName;
-        this.lName = lName;
-        this.pass = pass;
-        this.isManager = isManager;
-        this.numMist = 0;
-        System.out.println("\t User account was generated.");
-        userToFile();
+        boolean isExists = false;
+
+        File files = new File(location);
+
+        for(File file: files.listFiles()){
+            String fileName = file.getName();
+            if(fileName.toUpperCase().contains("_" + uName.toUpperCase() + ".TXT")){
+                isExists = true;
+                break;
+            }
+        }
+        if(isExists){
+            System.out.println("!!! This username is already present, please change the username!");
+        } else {
+            this.uName = uName;
+            this.fName = fName;
+            this.lName = lName;
+            this.pass = pass;
+            this.isManager = isManager;
+            this.numMist = 0;
+            System.out.println("\t User account was generated.");
+            userToFile();
+        }
     }
 
     private void userToFile(){
