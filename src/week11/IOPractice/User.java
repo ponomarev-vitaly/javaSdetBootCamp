@@ -49,6 +49,7 @@ public class User {
                 break;
             }
         }
+
         if(isExists){
             System.out.println("!!! This username is already present, please change the username!");
         } else {
@@ -79,12 +80,12 @@ public class User {
             }
             FileOutputStream fos = new FileOutputStream(userTxt);
             String details = "";
-            details = details.concat("User Name: " + this.uName + "*** \n");
-            details = details.concat("First Name: " + this.fName + "*** \n");
-            details = details.concat("Last Name: " + this.lName + "*** \n");
-            details = details.concat("Password: " + this.pass + "*** \n");
-            details = details.concat("IsManager: " + this.isManager + "*** \n");
-            details = details.concat("NumOfMistake: " + this.numMist + "*** \n");
+            details = details.concat("User Name : " + this.uName + "*** \n");
+            details = details.concat("First Name : " + this.fName + "*** \n");
+            details = details.concat("Last Name : " + this.lName + "*** \n");
+            details = details.concat("Password : " + this.pass + "*** \n");
+            details = details.concat("IsManager : " + this.isManager + "*** \n");
+            details = details.concat("NumOfMistake : " + this.numMist + "*** \n");
             details = details.concat("Logins:*** \n");
 
             fos.write(details.getBytes());
