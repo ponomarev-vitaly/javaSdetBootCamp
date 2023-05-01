@@ -8,7 +8,7 @@ public class NonPrimitiveDataType {
         int nameLength = name.length();
         System.out.println("Name's length : " + nameLength);
 
-        String txt = "Clarusway SDET Course.";
+        String txt = "JAVA SDET Course.";
         System.out.println(txt);
         System.out.println(txt.toUpperCase());
         System.out.print(txt.toLowerCase());

@@ -30,7 +30,7 @@ public class EscapeSequences {
         System.out.println("This is :\t first line\t This is the second line.");
         System.out.println("I am using \\ back slash.");
 
-        System.out.println("Welcome to \'CLARUSWAY SDET COURSE\'.");
+        System.out.println("Welcome to \'JAVA SDET COURSE\'.");
         System.out.println("\nThis is starting in a new line.");
 
     }
