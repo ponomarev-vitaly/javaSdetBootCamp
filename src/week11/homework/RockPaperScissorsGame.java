@@ -1,6 +1,5 @@
 package week11.homework;
 
-import java.sql.SQLOutput;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
 
@@ -42,18 +41,40 @@ public class RockPaperScissorsGame {
             if (gameMode){
                 boolean replay = true;
                 while(replay){
-                    int comp = (int)(Math.random()*3);
+                    int comp = (int)(Math.random()*3); // 0 -> Rock | 1 -> Paper | 2 -> Scissors
                     entry = playGame();
                     if(comp == 0 ) {
                         if (entry.compareTo("R") == 0) {
-                            entry = whatNext("DRAW GAME");
                             games.get("DRAW").replace("Rock", games.get("DRAW").get("Rock") + 1);
+                            entry = whatNext("DRAW GAME");
                         } else if (entry.compareTo("P") == 0) {
-                            entry = whatNext("PLAYER WINS");
                             games.get("WIN").replace("Paper", games.get("WIN").get("Paper") + 1);
+                            entry = whatNext("PLAYER WINS");
                         } else {
                             entry = whatNext("PLAYER LOSES");
+                            games.get("LOSE").replace("Scissors", games.get("LOSE").get("Scissors") + 1);
+                        }
+                    } else if (comp == 1){
+                        if(entry.compareTo("P") == 0){
+                            games.get("DRAW").replace("Paper", games.get("DRAW").get("Paper") + 1);
+                            entry = whatNext("DRAW GAME");
+                        } else if (entry.compareTo("S") == 0){
+                            games.get("WIN").replace("Scissors", games.get("WIN").get("Scissors") + 1);
+                            entry = whatNext("PLAYER WINS");
+                        } else{
+                            games.get("LOSE").replace("Rock", games.get("LOSE").get("Rock") + 1);
+                            entry = whatNext("PLAYER LOSES");
+                        }
+                    }else{
+                        if(entry.compareTo("S") == 0){
+                            games.get("DRAW").replace("Scissors", games.get("DRAW").get("Scissors") + 1);
+                            entry = whatNext("DRAW GAME");
+                        } else if (entry.compareTo("R") == 0){
+                            games.get("WIN").replace("Rock", games.get("WIN").get("Rock") + 1);
+                            entry = whatNext("PLAYER WINS");
+                        } else{
                             games.get("LOSE").replace("Paper", games.get("LOSE").get("Paper") + 1);
+                            entry = whatNext("PLAYER LOSES");
                         }
                     }
 
@@ -104,19 +125,24 @@ public class RockPaperScissorsGame {
     }
 
     public static void displayStatistics(){
-        System.out.println("\n\n");
-        System.out.println("-------------------- ROCK - PAPER - SCISSORS --------------------");
+        int playerWins = games.get("WIN").get("Rock") + games.get("WIN").get("Paper") + games.get("WIN").get("Scissors");
+        int playerDraws = games.get("DRAW").get("Rock") + games.get("DRAW").get("Paper") + games.get("DRAW").get("Scissors");
+        int playerLoses = games.get("LOSE").get("Rock") + games.get("LOSE").get("Paper") + games.get("LOSE").get("Scissors");
+        System.out.println("\n\n-------------------- ROCK - PAPER - SCISSORS --------------------");
         System.out.println("--------------------         STATISTICS      --------------------");
         System.out.println("\t\tWIN \t\t\t\t DRAW \t\t\t\t LOSE");
-        System.out.println("\t\tRock : " + games.get("WIN").get("Rock"));
-        System.out.println("\t\tRock : " + games.get("DRAW").get("Rock"));
-        System.out.println("\t\tRock : " + games.get("LOSE").get("Rock"));
-        System.out.println("\t\tPaper : " + games.get("WIN").get("Paper"));
-        System.out.println("\t\tPaper : " + games.get("DRAW").get("Paper"));
-        System.out.println("\t\tPaper : " + games.get("LOSE").get("Paper"));
-        System.out.println("\t\tScissors : " + games.get("WIN").get("Scissors"));
-        System.out.println("\t\tScissors : " + games.get("DRAW").get("Scissors"));
-        System.out.println("\t\tScissors : " + games.get("LOSE").get("Scissors"));
+        System.out.print("\t\tRock : " + games.get("WIN").get("Rock"));
+        System.out.print("\t\t\t Rock : " + games.get("DRAW").get("Rock"));
+        System.out.println("\t\t\t Rock : " + games.get("LOSE").get("Rock"));
+        System.out.print("\t\tPaper : " + games.get("WIN").get("Paper"));
+        System.out.print("\t\t\t Paper : " + games.get("DRAW").get("Paper"));
+        System.out.println("\t\t\t Paper : " + games.get("LOSE").get("Paper"));
+        System.out.print("\t\tScissors : " + games.get("WIN").get("Scissors"));
+        System.out.print("\t\t Scissors : " + games.get("DRAW").get("Scissors"));
+        System.out.println("\t\t Scissors : " + games.get("LOSE").get("Scissors"));
         System.out.println("-----------------------------------------------------------------");
+        System.out.println("\t\tPLAYER WINS: " + playerWins);
+        System.out.println("\t\tDRAW GAME: " + playerDraws);
+        System.out.println("\t\tPLAYER LOSSES: " + playerLoses);
     }
 }
