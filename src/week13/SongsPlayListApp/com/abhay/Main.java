@@ -1,8 +1,6 @@
 package week13.SongsPlayListApp.com.abhay;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Main {
 
@@ -34,6 +32,10 @@ public class Main {
     }
 
     private static void play(LinkedList<Song> playList){
+        Scanner scan = new Scanner(System.in);
+        boolean quit = false;
+        boolean forward = true;
+        ListIterator<Song> listIterator = playList.listIterator();
 
     }
 
