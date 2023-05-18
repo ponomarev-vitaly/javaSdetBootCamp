@@ -6,7 +6,12 @@ public class Library {
     private String myBooksBusiness;
     private String author;
     private int numberOfPages;
-    private String theDateOfIssus;
+    private String theDateOfIssue;
 
-
+    public Library(String myBooksBusiness, String author, int numberOfPages, String theDateOfIssue) {
+        this.myBooksBusiness = myBooksBusiness;
+        this.author = author;
+        this.numberOfPages = numberOfPages;
+        this.theDateOfIssue = theDateOfIssue;
+    }
 }
