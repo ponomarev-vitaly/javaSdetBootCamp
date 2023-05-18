@@ -17,13 +17,6 @@ public class Library {
         this.ID = IDCounter;
     }
 
-    public static int getIDCounter() {
-        return IDCounter;
-    }
-
-    public static void setIDCounter(int IDCounter) {
-        Library.IDCounter = IDCounter;
-    }
 
     public int getID() {
         return ID;
@@ -63,5 +56,9 @@ public class Library {
 
     public void setTheDateOfIssue(String theDateOfIssue) {
         this.theDateOfIssue = theDateOfIssue;
+    }
+
+    public String gettingData(String bookInfo){
+        return bookInfo;
     }
 }
