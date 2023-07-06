@@ -34,8 +34,6 @@ public class ArithmeticOperators {
         System.out.println(num7);
         int num8 = anotherRandomNumber--;
         System.out.println(num8); //Now let's try out the decrement.
-
-
     }
 
     public static class ArithmeticOperators1 {
@@ -69,10 +67,6 @@ public class ArithmeticOperators {
             int B = 8;
             int C = A % B;
             System.out.println("A % B = " + C);
-
-
-
-
         }
     }
 }
