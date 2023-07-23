@@ -38,19 +38,19 @@ public class AreaOfTriangle {
 
         // Solution 2.
 
-//        System.out.print("Please, enter A side of a triangle: ");
-//        sideOfTheTriangleA = scan.nextDouble();
-//
-//        System.out.print("Please, enter B side of a triangle: ");
-//        sideOfTheTriangleB = scan.nextDouble();
-//
-//        System.out.print("Please, enter C side of a triangle: ");
-//        sideOfTheTriangleC = scan.nextDouble();
-//
-//        halfOfThePerimeter = (sideOfTheTriangleA + sideOfTheTriangleB + sideOfTheTriangleC)/2;
-//        triangleArea = Math.sqrt(halfOfThePerimeter*(halfOfThePerimeter-sideOfTheTriangleA)*(halfOfThePerimeter-sideOfTheTriangleB)*(halfOfThePerimeter-sideOfTheTriangleC));
-//
-//        System.out.println("Triangle area is: " + triangleArea);
+        System.out.print("Please, enter A side of a triangle: ");
+        sideOfTheTriangleA = scan.nextDouble();
+
+        System.out.print("Please, enter B side of a triangle: ");
+        sideOfTheTriangleB = scan.nextDouble();
+
+        System.out.print("Please, enter C side of a triangle: ");
+        sideOfTheTriangleC = scan.nextDouble();
+
+        halfOfThePerimeter = (sideOfTheTriangleA + sideOfTheTriangleB + sideOfTheTriangleC)/2;
+        triangleArea = Math.sqrt(halfOfThePerimeter*(halfOfThePerimeter-sideOfTheTriangleA)*(halfOfThePerimeter-sideOfTheTriangleB)*(halfOfThePerimeter-sideOfTheTriangleC));
+
+        System.out.println("Triangle area is: " + triangleArea);
 
 
     }
