@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class IntegerCalculator {
     public static void main(String[] args) throws IllegalArgumentException{
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please input 2 arguments. Consider your agruments will be String type.");
+        System.out.println("Please input 2 arguments. Consider your arguments will be String type.");
         System.out.print("Now it's your turn to enter the first argument: ");
         String str1 = scan.nextLine();
         System.out.print("Now it's your turn to enter the second argument: ");
